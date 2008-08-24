@@ -1,0 +1,1076 @@
+System Configuration:  Sun Microsystems  sun4d
+Memory size: 960 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xffd5f764
+    get-unum:  ffd486b0
+    system-report:  ff2fffff.ff2fffff.3f2ffc7f.0f2ffc7f.cf2fffff.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+    idprom:  01800800.201be650.2c17c9d0.500c601a.00000000.00000000.00000000.00000000
+    unum-table:  000010cc.00001068.00001004.00000fa0.00000f3c.00000ed8.00000e74.00000e10.000013ec.00001388.00001324.000012c0.0000125c.000011f8.00001194.00001130
+    n-xdbus:  00000002
+    clock-frequency:  02625a00
+    banner-name:  'SPARCcenter 2000'
+    model:  'SUNW,SPARCcenter-2000'
+    name:  'SUNW,SPARCcenter-2000'
+    breakpoint-trap:  0000007f
+    compatible:  'sun4d'
+    stdout-path:  '/cpu-unit@f,e0000000/bootbus/zs@1,200000:a'
+    stdin-path:  '/cpu-unit@f,e0000000/bootbus/zs@1,200000:a'
+
+    Node 0xffd6297c
+        name:  'packages'
+
+        Node 0xffd7b178
+            name:  'disk-label'
+
+        Node 0xffd7b758
+            disk-write-fix:  
+            name:  'deblocker'
+
+        Node 0xffd7be2c
+            name:  'obp-tftp'
+
+    Node 0xffd629cc
+        powerfail-time:  '827290285'
+        output-device:  'screen'
+        input-device:  'keyboard'
+        keyboard-click?:  'false'
+        keymap:  
+        ttyb-rts-dtr-off:  'false'
+        ttyb-ignore-cd:  'true'
+        ttya-rts-dtr-off:  'false'
+        ttya-ignore-cd:  'true'
+        ttyb-mode:  '9600,8,n,1,-'
+        ttya-mode:  '9600,8,n,1,-'
+        sbus-probe-list9:  '0123'
+        sbus-probe-list8:  '0123'
+        sbus-probe-list7:  '0123'
+        sbus-probe-list6:  '0123'
+        sbus-probe-list5:  '0123'
+        sbus-probe-list4:  '0123'
+        sbus-probe-list3:  '0123'
+        sbus-probe-list2:  '0123'
+        sbus-probe-list1:  '0123'
+        sbus-probe-list0:  '0123'
+        fcode-debug?:  'false'
+        auto-boot?:  'true'
+        watchdog-reboot?:  'false'
+        diag-file:  
+        diag-device:  'net'
+        boot-file:  
+        boot-device:  'disk net'
+        local-mac-address?:  'false'
+        screen-#columns:  '80'
+        screen-#rows:  '34'
+        selftest-#megs:  '960'
+        scsi-initiator-id:  '7'
+        use-nvramrc?:  'false'
+        nvramrc:  
+        sunmon-compat?:  'false'
+        security-mode:  'none'
+        security-password:  
+        security-#badlogins:  '1084926634'
+        oem-logo:  
+        oem-logo?:  'false'
+        oem-banner:  
+        oem-banner?:  'false'
+        hardware-revision:  aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaa40aa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaa0000.00aaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaa80aa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aa000000.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaa
+        last-hardware-update:  aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaaaa.aaaaaa40
+        testarea:  '0'
+        mfg-switch?:  'false'
+        diag-switch?:  'false'
+        name:  'options'
+
+    Node 0xffd62a1c
+        scsi:  '/io-unit@f,e0200000/sbi@0,0/dma@0,81000/esp@0,80000'
+        net:  '/io-unit@f,e0200000/sbi/lebuffer@3,40000/le@3,60000'
+        disk3:  '/io-unit@f,e0200000/sbi@0,0/dma@0,81000/esp@0,80000/sd@3,0'
+        disk2:  '/io-unit@f,e0200000/sbi@0,0/dma@0,81000/esp@0,80000/sd@2,0'
+        disk1:  '/io-unit@f,e0200000/sbi@0,0/dma@0,81000/esp@0,80000/sd@1,0'
+        disk0:  '/io-unit@f,e0200000/sbi@0,0/dma@0,81000/esp@0,80000/sd@0,0'
+        disk:  '/io-unit@f,e0200000/sbi@0,0/dma@0,81000/esp@0,80000/sd@0,0'
+        cdrom:  '/io-unit@f,e0200000/sbi/dma@3,81000/esp@3,80000/sd@6,0:e'
+        tape1:  '/io-unit@f,e0200000/sbi/dma@3,81000/esp@3,80000/st@5,0'
+        tape0:  '/io-unit@f,e0200000/sbi/dma@3,81000/esp@3,80000/st@4,0'
+        tape:  '/io-unit@f,e0200000/sbi/dma@3,81000/esp@3,80000/st@4,0'
+        keyboard1:  '/cpu-unit@f,e0000000/bootbus/zs@1,240000'
+        keyboard!:  '/cpu-unit@f,e0000000/bootbus/zs@1,240000:forcemode'
+        ttyb:  '/cpu-unit@f,e0000000/bootbus/zs@1,200000:b'
+        ttya:  '/cpu-unit@f,e0000000/bootbus/zs@1,200000:a'
+        keyboard:  '/cpu-unit@f,e0000000/bootbus/zs@1,240000'
+        name:  'aliases'
+
+    Node 0xffd715b4
+        reg:  00000000.00000000.3c000000
+        available:  00000000.3be5b000.00013000.00000000.00000000.3aa42000
+        name:  'memory'
+
+    Node 0xffd71704
+        available:  00000000.fff00000.00100000.00000000.fef00000.00e00000.00000000.f0566000.0de9a000.00000000.e1200000.0f001000.00000000.e0100000.00100000.00000000.00000000.e0040000.00000000.fe400000.00af2000
+        reg:  00000000.00000000.80000000.00000000.80000000.80000000
+        name:  'virtual-memory'
+
+    Node 0xffd7276c
+        decode-complete:  
+        reconfiguration-possible:  
+        aligned-allocator:  
+        relative-addressing:  
+        name:  'openprom'
+
+    Node 0xffd8535c
+        reset-time:  48402305.240227
+        name:  'boards'
+
+        Node 0xffd902d4
+            reset-time:  48402305.240227
+            reset-state:  0000017f.ffffdfff.ffffffff.ffffffff.0000016f.ffffdbff.ffffffff.ffffffff.0000016f.ffffdbff.ffffffff.ffffffff.0000016f.ffffdbff.ffffffff.ffffffff.00000420.000001bf.ffffefff.ffffffff.ffffffff.000001bf.ffffefff.ffffffff.ffffffff.000001bf.ffffefff.ffffffff.ffffffff.0000017f.ffffdfff.ffffffff.ffffffff.000007e1
+            board#:  00000000
+            reg:  00000000.00000000.00000001
+            name:  'bif'
+
+        Node 0xffd90384
+            reset-time:  17242204.101125
+            reset-state:  00000100.00000000.00000080.20002008.00000100.00000000.00000080.20002008.00000100.00000000.00000080.20002008.00000100.00000000.00000080.20002008.00000400.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000400
+            board#:  00000001
+            reg:  00000001.00000000.00000001
+            name:  'bif'
+
+        Node 0xffd90434
+            reset-time:  40531706.121225
+            reset-state:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+            board#:  00000002
+            reg:  00000002.00000000.00000001
+            name:  'bif'
+
+        Node 0xffd904e4
+            reset-time:  44061404.110426
+            reset-state:  00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000400.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000100.00000000.00000000.00000000.00000400
+            board#:  00000003
+            reg:  00000003.00000000.00000001
+            name:  'bif'
+
+        Node 0xffd90594
+            reset-time:  00000000.000000
+            reset-state:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+            board#:  00000004
+            reg:  00000004.00000000.00000001
+            name:  'bif'
+
+    Node 0xffd8e3c0
+        reset-state:  00000000.00000000.ffffffff.ffffffff.0001a040.08005600.ffffffff.ffffffff.0001a050.08005600
+        ranges:  00000000.00000000.0000000f.e0000000.00100000.00000001.00000000.0000000f.00000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e0000000.00100000.0000000f.00000000.00800000.0000000f.01f00000.00100000
+        device-id:  00000000
+        board#:  00000000
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8e578
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed000.00000001
+            mailbox-virtual:  ffeef000.00000001
+            cpu-id:  00000000
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+        Node 0xffd90644
+            device_type:  'hierarchical'
+            ranges:  00000000.00000000.00000000.00000000.00800000.00000001.00000000.00000001.00000000.00800000.00000003.00000000.00000003.00000000.00800000
+            name:  'bootbus'
+
+            Node 0xffd910c8
+                device_type:  'serial'
+                slave:  00000000
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00200000.00000008.00000003.00200000.00000008
+                name:  'zs'
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+
+            Node 0xffd91fcc
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                keyboard:  
+                device_type:  'serial'
+                slave:  00000001
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00240000.00000008.00000003.00240000.00000008
+                name:  'zs'
+
+            Node 0xffd9298c
+                address:  feefc000.feefa000
+                reg:  00000001.00280000.00002000.00000003.00280000.00002000
+                model:  'mk48t08'
+                name:  'eeprom'
+
+            Node 0xffd92a64
+                reg:  00000001.001e0000.00002000.00000003.001e0000.00002000
+                name:  'sram'
+
+            Node 0xffd92b18
+                reg:  00000001.002e0000.00002000.00000003.002e0000.00002000
+                name:  'leds'
+
+    Node 0xffd8e714
+        reset-state:  aaaaaaaa.aaaaaaaa.ffffffff.ffffffff.00fff0ff.ffffffff.ffffffff.ffffffff.00fff0ff.fffffffe
+        ranges:  00000000.00000000.0000000f.e0800000.00100000.00000001.00000000.0000000f.08000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e0800000.00100000.0000000f.08000000.00800000.0000000f.09f00000.00100000
+        device-id:  00000008
+        board#:  00000000
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8e8cc
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed001.00000001
+            mailbox-virtual:  ffeef001.00000001
+            cpu-id:  00000001
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+    Node 0xffd8ea68
+        reset-state:  00000000.00000000.00000000.00000000.0001a041.0800dd00.00000000.00000000.0001a051.0800dd00
+        ranges:  00000000.00000000.0000000f.e1000000.00100000.00000001.00000000.0000000f.10000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e1000000.00100000.0000000f.10000000.00800000.0000000f.11f00000.00100000
+        device-id:  00000010
+        board#:  00000001
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8ec20
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed002.00000001
+            mailbox-virtual:  ffeef002.00000001
+            cpu-id:  00000002
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+        Node 0xffd92bc0
+            device_type:  'hierarchical'
+            ranges:  00000000.00000000.00000000.00000000.00800000.00000001.00000000.00000001.00000000.00800000.00000003.00000000.00000003.00000000.00800000
+            name:  'bootbus'
+
+            Node 0xffd93224
+                device_type:  'serial'
+                slave:  00000000
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00200000.00000008.00000003.00200000.00000008
+                name:  'zs'
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+
+            Node 0xffd94128
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                keyboard:  
+                device_type:  'serial'
+                slave:  00000001
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00240000.00000008.00000003.00240000.00000008
+                name:  'zs'
+
+            Node 0xffd94ae8
+                reg:  00000001.00280000.00002000.00000003.00280000.00002000
+                model:  'mk48t08'
+                name:  'eeprom'
+
+            Node 0xffd94bc0
+                reg:  00000001.001e0000.00002000.00000003.001e0000.00002000
+                name:  'sram'
+
+            Node 0xffd94c74
+                reg:  00000001.002e0000.00002000.00000003.002e0000.00002000
+                name:  'leds'
+
+    Node 0xffd8edbc
+        reset-state:  00000000.00000000.ffffffff.ffffffff.00fff0ff.ffffffff.ffffffff.ffffffff.00fff0ff.fffffffe
+        ranges:  00000000.00000000.0000000f.e1800000.00100000.00000001.00000000.0000000f.18000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e1800000.00100000.0000000f.18000000.00800000.0000000f.19f00000.00100000
+        device-id:  00000018
+        board#:  00000001
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8ef74
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed003.00000001
+            mailbox-virtual:  ffeef003.00000001
+            cpu-id:  00000003
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+    Node 0xffd8f110
+        reset-state:  00000000.00000000.00000000.00000000.0001a000.08005600.ffffffff.ffffffff.00000000.0bfc00c8
+        ranges:  00000000.00000000.0000000f.e2000000.00100000.00000001.00000000.0000000f.20000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e2000000.00100000.0000000f.20000000.00800000.0000000f.21f00000.00100000
+        device-id:  00000020
+        board#:  00000002
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8f2c8
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed004.00000001
+            mailbox-virtual:  ffeef004.00000001
+            cpu-id:  00000004
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+        Node 0xffd94d1c
+            device_type:  'hierarchical'
+            ranges:  00000000.00000000.00000000.00000000.00800000.00000001.00000000.00000001.00000000.00800000.00000003.00000000.00000003.00000000.00800000
+            name:  'bootbus'
+
+            Node 0xffd95380
+                device_type:  'serial'
+                slave:  00000000
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00200000.00000008.00000003.00200000.00000008
+                name:  'zs'
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+
+            Node 0xffd96284
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                keyboard:  
+                device_type:  'serial'
+                slave:  00000001
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00240000.00000008.00000003.00240000.00000008
+                name:  'zs'
+
+            Node 0xffd96c44
+                reg:  00000001.00280000.00002000.00000003.00280000.00002000
+                model:  'mk48t08'
+                name:  'eeprom'
+
+            Node 0xffd96d1c
+                reg:  00000001.001e0000.00002000.00000003.001e0000.00002000
+                name:  'sram'
+
+            Node 0xffd96dd0
+                reg:  00000001.002e0000.00002000.00000003.002e0000.00002000
+                name:  'leds'
+
+    Node 0xffd8f464
+        reset-state:  00000000.00000000.ffffffff.ffffffff.00fff0ff.ffffffff.ffffffff.ffffffff.00fff0ff.fffffffe
+        ranges:  00000000.00000000.0000000f.e3000000.00100000.00000001.00000000.0000000f.30000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e3000000.00100000.0000000f.30000000.00800000.0000000f.31f00000.00100000
+        device-id:  00000030
+        board#:  00000003
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8f61c
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed006.00000001
+            mailbox-virtual:  ffeef006.00000001
+            cpu-id:  00000006
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+        Node 0xffd96e78
+            device_type:  'hierarchical'
+            ranges:  00000000.00000000.00000000.00000000.00800000.00000001.00000000.00000001.00000000.00800000.00000003.00000000.00000003.00000000.00800000
+            name:  'bootbus'
+
+            Node 0xffd974dc
+                device_type:  'serial'
+                slave:  00000000
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00200000.00000008.00000003.00200000.00000008
+                name:  'zs'
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+
+            Node 0xffd983e0
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                keyboard:  
+                device_type:  'serial'
+                slave:  00000001
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00240000.00000008.00000003.00240000.00000008
+                name:  'zs'
+
+            Node 0xffd98da0
+                reg:  00000001.00280000.00002000.00000003.00280000.00002000
+                model:  'mk48t08'
+                name:  'eeprom'
+
+            Node 0xffd98e78
+                reg:  00000001.001e0000.00002000.00000003.001e0000.00002000
+                name:  'sram'
+
+            Node 0xffd98f2c
+                reg:  00000001.002e0000.00002000.00000003.002e0000.00002000
+                name:  'leds'
+
+    Node 0xffd8f7b8
+        reset-state:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+        ranges:  00000000.00000000.0000000f.e4000000.00100000.00000001.00000000.0000000f.40000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e4000000.00100000.0000000f.40000000.00800000.0000000f.41f00000.00100000
+        device-id:  00000040
+        board#:  00000004
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8f970
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed008.00000001
+            mailbox-virtual:  ffeef008.00000001
+            cpu-id:  00000008
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+        Node 0xffd98fd4
+            device_type:  'hierarchical'
+            ranges:  00000000.00000000.00000000.00000000.00800000.00000001.00000000.00000001.00000000.00800000.00000003.00000000.00000003.00000000.00800000
+            name:  'bootbus'
+
+            Node 0xffd99638
+                device_type:  'serial'
+                slave:  00000000
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00200000.00000008.00000003.00200000.00000008
+                name:  'zs'
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+
+            Node 0xffd9a53c
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                keyboard:  
+                device_type:  'serial'
+                slave:  00000001
+                intr:  0000000c.00000000
+                interrupts:  0000000c
+                reg:  00000001.00240000.00000008.00000003.00240000.00000008
+                name:  'zs'
+
+            Node 0xffd9aefc
+                reg:  00000001.00280000.00002000.00000003.00280000.00002000
+                model:  'mk48t08'
+                name:  'eeprom'
+
+            Node 0xffd9afd4
+                reg:  00000001.001e0000.00002000.00000003.001e0000.00002000
+                name:  'sram'
+
+            Node 0xffd9b088
+                reg:  00000001.002e0000.00002000.00000003.002e0000.00002000
+                name:  'leds'
+
+    Node 0xffd8fb0c
+        reset-state:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+        ranges:  00000000.00000000.0000000f.e4800000.00100000.00000001.00000000.0000000f.48000000.02000000.00000003.00000000.0000000f.f0000000.10000000
+        reg:  0000000f.e4800000.00100000.0000000f.48000000.00800000.0000000f.49f00000.00100000
+        device-id:  00000048
+        board#:  00000004
+        device_type:  'hierarchical'
+        name:  'cpu-unit'
+
+        Node 0xffd8fcc4
+            clock-frequency:  02faf080
+            device_type:  'cpu'
+            reg:  00000001.01f00000.00001000
+            mailbox:  00000010.3beed009.00000001
+            mailbox-virtual:  ffeef009.00000001
+            cpu-id:  00000009
+            ecache-line-size:  00000040
+            ecache-nlines:  00008000
+            sparc-version:  00000008
+            name:  'TI,TMS390Z55'
+
+    Node 0xffd8fe60
+        reset-state:  00000000.00000000.00048700.1800d000.00000000.00000000.00048700.1800d000
+        device-id:  00000001
+        size:  02000000.02000000.02000000.02000000
+        reg:  0000000f.e0100000.00100000
+        board#:  00000000
+        name:  'mem-unit'
+
+    Node 0xffd8ff44
+        reset-state:  ffffffff.ffffffff.00048741.1800d000.ffffffff.ffffffff.00048751.1800d000
+        device-id:  00000011
+        size:  02000000.02000000.02000000.02000000
+        reg:  0000000f.e1100000.00100000
+        board#:  00000001
+        name:  'mem-unit'
+
+    Node 0xffd90028
+        reset-state:  00000000.00000000.00048700.1800d000.00000000.00000000.00048700.1800d000
+        device-id:  00000021
+        size:  02000000.00400000.02000000.00400000
+        reg:  0000000f.e2100000.00100000
+        board#:  00000002
+        name:  'mem-unit'
+
+    Node 0xffd9010c
+        reset-state:  ffffffff.ffffffff.00048740.1800d000.ffffffff.ffffffff.00048750.1800d000
+        device-id:  00000031
+        size:  08000000.08000000.08000000.08000000
+        reg:  0000000f.e3100000.00100000
+        board#:  00000003
+        name:  'mem-unit'
+
+    Node 0xffd901f0
+        reset-state:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+        device-id:  00000041
+        size:  02000000.02000000.02000000.02000000
+        reg:  0000000f.e4100000.00100000
+        board#:  00000004
+        name:  'mem-unit'
+
+    Node 0xffd9b130
+        model:  '501-2197-01'
+        device_type:  'nvmemory'
+        reg:  00000000.3c000000.00800000.0000000f.e2101018.00000008.0000000f.e2101118.00000008
+        name:  'SUNW,nvtwo'
+
+    Node 0xffd9b210
+        reset-state:  00000000.001a0000.00000000.00000000.0001a040.2800dd00.00000000.00000000.0001a050.2800dd00
+        device_type:  'hierarchical'
+        board#:  00000000
+        device-id:  00000002
+        reg:  0000000f.e0200000.00100000.0000000f.02000000.00010000.0000000f.02800000.00100000
+        ranges:  00000000.00000000.0000000f.e0200000.00100000.00000001.00000000.0000000f.02000000.02000000.00000002.00000000.00000008.00000000.40000000
+        name:  'io-unit'
+
+        Node 0xffd9b7c4
+            reg:  00000000.00000000.00002000.00000001.00800000.00001000.00000001.00000000.00010000
+            ranges:  00000000.00000000.00000002.00000000.10000000.00000001.00000000.00000002.10000000.10000000.00000002.00000000.00000002.20000000.10000000.00000003.00000000.00000002.30000000.10000000
+            scsi-initiator-id:  00000007
+            one-pending-retry:  
+            reruns:  
+            burst-sizes:  0000007f
+            device_type:  'hierarchical'
+            clock-frequency:  01312d00
+            name:  'sbi'
+
+            Node 0xffd9bc90
+                model:  'SUNW,500-1902'
+                reg:  00000000.00081000.00000010
+                name:  'dma'
+
+                Node 0xffd9c338
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000000.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffd9f9d8
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffda04b8
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffda0f00
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000000.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffda1140
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000000.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+            Node 0xffda3100
+                model:  'SUNW,500-1902'
+                reg:  00000001.00081000.00000010
+                name:  'dma'
+
+                Node 0xffda37a8
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000001.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffda6e48
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffda7508
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffda7f50
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000001.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffda8190
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000001.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+            Node 0xffdaa150
+                model:  'SUNW,500-1902'
+                reg:  00000002.00081000.00000010
+                name:  'dma'
+
+                Node 0xffdaa7f8
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000002.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffdade98
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffdae558
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffdaefa0
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000002.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffdaf1e0
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000002.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+            Node 0xffdb11a0
+                model:  'SUNW,500-2015'
+                reg:  00000003.00081000.00000010
+                name:  'dma'
+
+                Node 0xffdb1824
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000003.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+
+                    Node 0xffdb4ea0
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffdb5560
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffdb5fa8
+                burst-sizes:  0000003f
+                model:  'SUNW,500-2015'
+                reg:  00000003.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffdb61e8
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000003.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+    Node 0xffdb81a8
+        reset-state:  00000000.00020080.ffffffff.ffffffff.0001a041.2800dd00.ffffffff.ffffffff.0001a051.2800dd00
+        device_type:  'hierarchical'
+        board#:  00000001
+        device-id:  00000012
+        reg:  0000000f.e1200000.00100000.0000000f.12000000.00010000.0000000f.12800000.00100000
+        ranges:  00000000.00000000.0000000f.e1200000.00100000.00000001.00000000.0000000f.12000000.02000000.00000002.00000000.00000008.40000000.40000000
+        name:  'io-unit'
+
+        Node 0xffdb875c
+            reg:  00000000.00000000.00002000.00000001.00800000.00001000.00000001.00000000.00010000
+            ranges:  00000000.00000000.00000002.00000000.10000000.00000001.00000000.00000002.10000000.10000000.00000002.00000000.00000002.20000000.10000000.00000003.00000000.00000002.30000000.10000000
+            scsi-initiator-id:  00000007
+            one-pending-retry:  
+            reruns:  
+            burst-sizes:  0000007f
+            device_type:  'hierarchical'
+            clock-frequency:  01312d00
+            name:  'sbi'
+
+            Node 0xffdb8c28
+                model:  'SUNW,500-1902'
+                reg:  00000000.00081000.00000010
+                name:  'dma'
+
+                Node 0xffdb92d0
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000000.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffdbc970
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffdbd030
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffdbda78
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000000.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffdbdcb8
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000000.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+            Node 0xffdbfc78
+                model:  'SUNW,500-1902'
+                reg:  00000001.00081000.00000010
+                name:  'dma'
+
+                Node 0xffdc0320
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000001.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffdc39c0
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffdc4080
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffdc4ac8
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000001.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffdc4d08
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000001.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+            Node 0xffdc6cc8
+                intr:  00000007.00000000
+                reg:  00000002.00000000.00001000
+                model:  'SUNW,501-1732'
+                device_type:  'network'
+                name:  'bf'
+
+            Node 0xffdcc6b0
+                model:  'SUNW,500-2015'
+                reg:  00000003.00081000.00000010
+                name:  'dma'
+
+                Node 0xffdccd34
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000003.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+
+                    Node 0xffdd03b0
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffdd0a70
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffdd14b8
+                burst-sizes:  0000003f
+                model:  'SUNW,500-2015'
+                reg:  00000003.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffdd16f8
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000003.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+    Node 0xffdd36b8
+        reset-state:  00000004.00000010.00000000.00000000.0001a000.2800dd00.00000000.00000000.0001a000.2800dd00
+        device_type:  'hierarchical'
+        board#:  00000002
+        device-id:  00000022
+        reg:  0000000f.e2200000.00100000.0000000f.22000000.00010000.0000000f.22800000.00100000
+        ranges:  00000000.00000000.0000000f.e2200000.00100000.00000001.00000000.0000000f.22000000.02000000.00000002.00000000.00000008.80000000.40000000
+        name:  'io-unit'
+
+        Node 0xffdd3c6c
+            reg:  00000000.00000000.00002000.00000001.00800000.00001000.00000001.00000000.00010000
+            ranges:  00000000.00000000.00000002.00000000.10000000.00000001.00000000.00000002.10000000.10000000.00000002.00000000.00000002.20000000.10000000.00000003.00000000.00000002.30000000.10000000
+            scsi-initiator-id:  00000007
+            one-pending-retry:  
+            reruns:  
+            burst-sizes:  0000007f
+            device_type:  'hierarchical'
+            clock-frequency:  01312d00
+            name:  'sbi'
+
+            Node 0xffdd4138
+                model:  'SUNW,500-1902'
+                reg:  00000000.00081000.00000010
+                name:  'dma'
+
+                Node 0xffdd47e0
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000000.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffdd7e80
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffdd8540
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffdd8f88
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000000.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffdd91c8
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000000.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+            Node 0xffddb188
+                model:  'SUNW,500-1902'
+                reg:  00000001.00081000.00000010
+                name:  'dma'
+
+                Node 0xffddb830
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000005.00000000
+                    reg:  00000001.00080000.00000040
+                    name:  'esp'
+                    chip:  'FAS236'
+                    interrupts:  00000003
+                    differential:  
+
+                    Node 0xffddeed0
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffddf590
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffddffd8
+                burst-sizes:  0000003f
+                model:  'SUNW,500-1902'
+                reg:  00000001.00040000.00020000
+                name:  'lebuffer'
+
+                Node 0xffde0218
+                    device_type:  'network'
+                    intr:  00000007.00000000
+                    busmaster-regval:  00000005
+                    reg:  00000001.00060000.00000004
+                    alias:  'le'
+                    name:  'le'
+                    interrupts:  00000004
+
+    Node 0xffde21d8
+        reset-state:  00000000.00020000.ffffffff.ffffffff.0001a040.2800dd00.ffffffff.ffffffff.0001a050.2800dd00
+        device_type:  'hierarchical'
+        board#:  00000003
+        device-id:  00000032
+        reg:  0000000f.e3200000.00100000.0000000f.32000000.00010000.0000000f.32800000.00100000
+        ranges:  00000000.00000000.0000000f.e3200000.00100000.00000001.00000000.0000000f.32000000.02000000.00000002.00000000.00000008.c0000000.40000000
+        name:  'io-unit'
+
+        Node 0xffde278c
+            reg:  00000000.00000000.00002000.00000001.00800000.00001000.00000001.00000000.00010000
+            ranges:  00000000.00000000.00000002.00000000.10000000.00000001.00000000.00000002.10000000.10000000.00000002.00000000.00000002.20000000.10000000.00000003.00000000.00000002.30000000.10000000
+            scsi-initiator-id:  00000007
+            one-pending-retry:  
+            reruns:  
+            burst-sizes:  0000007f
+            device_type:  'hierarchical'
+            clock-frequency:  01312d00
+            name:  'sbi'
+
+            Node 0xffde2c58
+                soc-config:  00000000
+                port-wwns:  20000800.20ffffff.20010800.20ffffff
+                soc-wwn:  10000800.20ffffff
+                intr:  00000005.00000000
+                interrupts:  00000003
+                reg:  00000000.00000000.00010000.00000000.00010000.00010000.00000000.00020000.00000010
+                manufacturer:  'SUNW'
+                model:  '501-2069'
+                name:  'SUNW,soc'
+
+    Node 0xffdeaa60
+        reset-state:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000
+        device_type:  'hierarchical'
+        board#:  00000004
+        device-id:  00000042
+        reg:  0000000f.e4200000.00100000.0000000f.42000000.00010000.0000000f.42800000.00100000
+        ranges:  00000000.00000000.0000000f.e4200000.00100000.00000001.00000000.0000000f.42000000.02000000.00000002.00000000.00000009.00000000.40000000
+        name:  'io-unit'
+
+        Node 0xffdeb014
+            reg:  00000000.00000000.00002000.00000001.00800000.00001000.00000001.00000000.00010000
+            ranges:  00000000.00000000.00000002.00000000.10000000.00000001.00000000.00000002.10000000.10000000.00000002.00000000.00000002.20000000.10000000.00000003.00000000.00000002.30000000.10000000
+            scsi-initiator-id:  00000007
+            one-pending-retry:  
+            reruns:  
+            burst-sizes:  0000007f
+            device_type:  'hierarchical'
+            clock-frequency:  01312d00
+            name:  'sbi'
+
+            Node 0xffdeb4e0
+                scsi-initiator-id:  00000007
+                differential:  00
+                isp-fcode:  '1.21 95/05/18'
+                device_type:  'scsi'
+                intr:  00000005.00000000
+                interrupts:  00000003
+                wide:  00
+                clock-frequency:  02625a00
+                reg:  00000002.00010000.00000450
+                64-bit-clean:  00
+                model:  'QLGC,ISP1000'
+                name:  'QLGC,isp'
+
+                Node 0xffdf0924
+                    device_type:  'block'
+                    name:  'sd'
+
+                Node 0xffdf10b8
+                    device_type:  'byte'
+                    name:  'st'
+
+            Node 0xffdf1b48
+                hm-rev:  00000022
+                model:  'SUNW,501-2739'
+                device_type:  'network'
+                intr:  00000007.00000000
+                interrupts:  00000004
+                address-bits:  00000030
+                max-frame-size:  00004000
+                reg:  00000003.08c00000.00000108.00000003.08c02000.00002000.00000003.08c04000.00002000.00000003.08c06000.00002000.00000003.08c07000.00000020
+                name:  'SUNW,hme'
+
+            Node 0xffdf823c
+                hm-rev:  00000022
+                device_type:  'scsi'
+                clock-frequency:  02625a00
+                intr:  00000005.00000000
+                interrupts:  00000003
+                reg:  00000003.08800000.00000010.00000003.08810000.00000040
+                name:  'SUNW,fas'
+
+                Node 0xffdfcb3c
+                    device_type:  'block'
+                    name:  'sd'
+
+                Node 0xffdfd344
+                    device_type:  'byte'
+                    name:  'st'
+

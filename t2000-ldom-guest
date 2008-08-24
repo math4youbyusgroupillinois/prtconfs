@@ -1,0 +1,431 @@
+System Configuration:  Sun Microsystems  sun4u
+Memory size: 1024 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xf0229da8
+    .node:  f0229da8
+    idprom:  01830014.4ff89292.00000000.f89292d9.00000000.00000000.00000000.00000000
+    scsi-initiator-id:  00000007
+    banner-name: 'Sun Fire T200'
+    name: 'SUNW,Sun-Fire-T200'
+    stick-frequency:  3b9aca00
+    breakpoint-trap:  0000007f
+    device_type: 'sun4v'
+    compatible: 'sun4v'
+    #address-cells:  00000002
+    #size-cells:  00000002
+
+    Node 0xf022cf90
+        .node:  f022cf90
+        name: 'packages'
+
+        Node 0xf0249144
+            .node:  f0249144
+            name: 'SUNW,builtin-drivers'
+
+        Node 0xf025854c
+            .node:  f025854c
+            disk-write-fix:  
+            name: 'deblocker'
+
+        Node 0xf0258a30
+            .node:  f0258a30
+            name: 'disk-label'
+
+        Node 0xf0259384
+            .node:  f0259384
+            iso6429-1983-colors:  
+            name: 'terminal-emulator'
+
+        Node 0xf0260fb8
+            .node:  f0260fb8
+            source: '/flashprom:'
+            name: 'dropins'
+
+        Node 0xf0261ee8
+            .node:  f0261ee8
+            name: 'SUNW,asr'
+
+        Node 0xf0265878
+            .node:  f0265878
+            name: 'kbd-translator'
+
+        Node 0xf0266fac
+            .node:  f0266fac
+            name: 'obp-tftp'
+
+    Node 0xf022d008
+        .node:  f022d008
+        bootargs:  00
+        bootpath: '/virtual-devices@100/channel-devices@200/disk@0:a'
+        mmu:  fff74080
+        memory:  fff74290
+        stdout:  fede5350
+        stdin:  fede5558
+        stdout-#lines:  ffffffff
+        name: 'chosen'
+
+    Node 0xf022d07c
+        .node:  f022d07c
+        version: 'OBP 4.28.1 2008/02/11 13:06'
+        model: 'SUNW,4.28.1'
+        aligned-allocator:  
+        relative-addressing:  
+        name: 'openprom'
+
+        Node 0xf022d10c
+            .node:  f022d10c
+            name: 'client-services'
+
+    Node 0xf022d1c4
+        .node:  f022d1c4
+        ttya-rts-dtr-off: 'false'
+        ttya-ignore-cd: 'true'
+        keyboard-layout:  
+        reboot-command:  
+        security-mode: 'none'
+        security-password:  
+        security-#badlogins: '0'
+        verbosity: 'min'
+        pci-mem64?: 'false'
+        diag-switch?: 'false'
+        local-mac-address?: 'true'
+        fcode-debug?: 'false'
+        scsi-initiator-id: '7'
+        oem-logo:  
+        oem-logo?: 'false'
+        oem-banner:  
+        oem-banner?: 'false'
+        ansi-terminal?: 'true'
+        screen-#columns: '80'
+        screen-#rows: '34'
+        ttya-mode: '9600,8,n,1,-'
+        output-device: 'virtual-console'
+        input-device: 'virtual-console'
+        auto-boot-on-error?: 'false'
+        load-base: '16384'
+        auto-boot?: 'false'
+        network-boot-arguments:  
+        boot-command: 'boot'
+        boot-file:  
+        boot-device: 'disk'
+        multipath-boot?: 'false'
+        boot-device-index: '0'
+        use-nvramrc?: 'false'
+        nvramrc:  
+        error-reset-recovery: 'boot'
+        name: 'options'
+
+    Node 0xf022d23c
+        .node:  f022d23c
+        vdisk2: '/virtual-devices@100/channel-devices@200/disk@1'
+        vdisk1: '/virtual-devices@100/channel-devices@200/disk@0'
+        vnet1: '/virtual-devices@100/channel-devices@200/network@0'
+        net: '/virtual-devices@100/channel-devices@200/network@0'
+        disk: '/virtual-devices@100/channel-devices@200/disk@0'
+        virtual-console: '/virtual-devices/console@1'
+        name: 'aliases'
+
+    Node 0xf023f46c
+        .node:  f023f46c
+        reg:  00000000.08000000.00000000.40000000
+        available:  00000000.47dda000.00000000.00010000.00000000.47dc0000.00000000.00018000.00000000.08400000.00000000.3f940000
+        name: 'memory'
+
+    Node 0xf023fa78
+        .node:  f023fa78
+        translations:  00000000.00002000.00000000.009fe000.80000000.08402740.00000000.40000000.00000000.00800000.80000000.08800740.00000000.f0000000.00000000.00400000.80000000.08000750.00000000.fede4000.00000000.00008000.80000000.47dee750.00000000.fedec000.00000000.00080000.80000000.47d40750.00000000.fee6c000.00000000.000d4000.80000000.47df6750.00000000.fef40000.00000000.000c0000.80000000.47f28750.00000000.fff00000.00000000.00054000.80000000.47eca750.00000000.fff58000.00000000.00002000.80000000.47fe8750.00000000.fff5a000.00000000.0000a000.80000000.47f1e750.00000000.fff64000.00000000.0000c000.80000000.47fec750.00000000.fff70000.00000000.00010000.80000000.081f0750
+        existing:  00000000.00000000.00000800.00000000.fffff800.00000000.00000800.00000000
+        available:  fffff800.00000000.000007fc.00000000.00000001.00000000.000007ff.00000000.00000000.ffff0000.00000000.0000e000.00000000.00000000.00000000.f0000000.00000000.f0a00000.00000000.0e3e4000
+        page-size:  00002000
+        name: 'virtual-memory'
+
+    Node 0xf0276d70
+        .node:  f0276d70
+        interrupt-map:  00000004.00000001.f0276d70.00000020.00000004.00000002.f0276d70.00000021.00000004.00000003.f0276d70.00000022.00000004.00000004.f0276d70.00000023.00000004.00000005.f0276d70.00000024.00000004.00000006.f0276d70.00000025.00000004.00000007.f0276d70.00000026.00000004.00000008.f0276d70.00000027.00000001.00000001.f0276d70.00000011
+        interrupt-map-mask:  0000001f.00ffffff.00000003
+        #interrupt-cells:  00000001
+        reg:  c0000100.00000000.00000000.00000000
+        #address-cells:  00000001
+        #size-cells:  00000000
+        device_type: 'virtual-devices'
+        compatible:  53554e57.2c73756e.34762d76.69727475.616c2d64.65766963.65730053.554e572c.76697274.75616c2d.64657669.63657300
+        name: 'virtual-devices'
+
+        Node 0xf0277e28
+            .node:  f0277e28
+            name: 'flashprom'
+            reg:  00000000
+
+        Node 0xf02783fc
+            .node:  f02783fc
+            compatible: 'SUNW,sun4v-ncp'
+            reg:  00000004
+            name: 'ncp'
+            interrupts:  00000001.00000002.00000003.00000004.00000005.00000006.00000007.00000008
+
+        Node 0xf0278500
+            .node:  f0278500
+            reg:  00000001
+            device_type: 'serial'
+            compatible: 'SUNW,sun4v-console'
+            name: 'console'
+            interrupts:  00000001
+
+        Node 0xf0278cd0
+            .node:  f0278cd0
+            #address-cells:  00000001
+            #size-cells:  00000000
+            reg:  00000200
+            compatible: 'SUNW,sun4v-channel-devices'
+            device_type: 'channel-devices'
+            name: 'channel-devices'
+
+            Node 0xf0279bd8
+                .node:  f0279bd8
+                local-mac-address:  00144ffb.1722
+                max-frame-size:  00004000
+                address-bits:  00000030
+                reg:  00000000
+                compatible: 'SUNW,sun4v-network'
+                device_type: 'network'
+                name: 'network'
+
+            Node 0xf027f730
+                .node:  f027f730
+                reg:  00000000
+                compatible: 'SUNW,sun4v-disk'
+                device_type: 'block'
+                name: 'disk'
+
+            Node 0xf02849d0
+                .node:  f02849d0
+                reg:  00000001
+                compatible: 'SUNW,sun4v-disk'
+                device_type: 'block'
+                name: 'disk'
+
+    Node 0xf0289e20
+        .node:  f0289e20
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000000.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf0289f50
+        .node:  f0289f50
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000001.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a080
+        .node:  f028a080
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000002.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a1b0
+        .node:  f028a1b0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000003.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a2e0
+        .node:  f028a2e0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000004.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a410
+        .node:  f028a410
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000005.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a540
+        .node:  f028a540
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000006.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a670
+        .node:  f028a670
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000007.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a7a0
+        .node:  f028a7a0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000008.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028a8d0
+        .node:  f028a8d0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000009.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028aa00
+        .node:  f028aa00
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000000a.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028ab30
+        .node:  f028ab30
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000000b.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028ac60
+        .node:  f028ac60
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000000c.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028ad90
+        .node:  f028ad90
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000000d.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028aec0
+        .node:  f028aec0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000000e.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028aff0
+        .node:  f028aff0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000000f.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b120
+        .node:  f028b120
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000010.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b250
+        .node:  f028b250
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000011.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b380
+        .node:  f028b380
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000012.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b4b0
+        .node:  f028b4b0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000013.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b5e0
+        .node:  f028b5e0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000014.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b710
+        .node:  f028b710
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000015.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b840
+        .node:  f028b840
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000016.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028b970
+        .node:  f028b970
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000017.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028baa0
+        .node:  f028baa0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000018.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028bbd0
+        .node:  f028bbd0
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c0000019.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028bd00
+        .node:  f028bd00
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000001a.00000000.00000000.00000000
+        name: 'cpu'
+
+    Node 0xf028be30
+        .node:  f028be30
+        clock-frequency:  3b9aca00
+        compatible:  53554e57.2c556c74.72615350.4152432d.54310053.554e572c.73756e34.762d6370.75007375.6e347600
+        device_type: 'cpu'
+        reg:  c000001b.00000000.00000000.00000000
+        name: 'cpu'
+

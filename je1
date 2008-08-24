@@ -1,0 +1,265 @@
+System Configuration:  Sun Microsystems  sun4m
+Memory size: 64 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xffd447f0
+    idprom:  01800800.207ff9fa.ffffffff.7ff9faa9.ffffffbf.ffffffff.00a50000.00000000
+    name: 'SUNW,JavaEngine1'
+    model: 'SUNW,XXX-XXXX'
+    banner-name: 'JavaEngine 1'
+    breakpoint-trap:  0000007f
+    compatible: 'sun4m'
+    get-unum:  ffd33a00
+    stdout-path: '/pci@0,300c0000/IGS@10'
+    stdin-path: '/pci@0,300c0000/ebus@0/8042@14,300060/keyboard@0'
+
+    Node 0xffd47040
+        name: 'packages'
+
+        Node 0xffd57ff0
+            name: 'disk-label'
+
+        Node 0xffd5d2b0
+            name: 'obp-tftp'
+
+    Node 0xffd470a0
+        tpe-link-test?: 'true'
+        pci-probe-list:  
+        local-mac-address?: 'false'
+        input-device: 'keyboard'
+        output-device: 'screen'
+        fcode-debug?: 'false'
+        screen-#columns: '80'
+        screen-#rows: '34'
+        silent-mode?: 'true'
+        auto-boot?: 'true'
+        watchdog-reboot?: 'false'
+        diag-file: '/javaos'
+        diag-device: 'net'
+        boot-file: '/javaos'
+        boot-device: 'net'
+        use-nvramrc?: 'false'
+        nvramrc:  
+        security-mode: 'none'
+        security-password:  
+        security-#badlogins: '0'
+        oem-logo:  
+        oem-logo?: 'false'
+        oem-banner:  
+        oem-banner?: 'false'
+        hardware-revision:  55555555.55555555.55555555.55555555.55555555.55550000.00000000.00000000.00000000.00000000.00000000.00000000.00000010.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00000000.00
+        last-hardware-update:  55554555.55555555.55555555.55555555.55555555.55555555.55555555.55555500.00000000.00000000.00000000.00000000.00000000.00000000.00000000.10000000.00000000.00000000.00000000.00000000.00000000.00
+        obp-update?: 'false'
+        os-update?: 'true'
+        testarea: '0'
+        mfg-switch?: 'false'
+        diag-switch?: 'false'
+        name: 'options'
+
+    Node 0xffd47100
+        flash: '/bootflash'
+        ebus: '/pci@0,300c0000/ebus'
+        net: '/pci@0,300c0000/network@0,1'
+        ttya: '/pci@0,300c0000/ebus/se@14,3003f8'
+        screen: '/pci@0,300c0000/IGS@10'
+        mouse: '/pci@0,300C0000/ebus/8042@14,300060/mouse@1'
+        keyboard: '/pci@0,300C0000/ebus/8042@14,300060/keyboard@0'
+        8042: '/pci@0,300C0000/ebus/8042@14,300060'
+        name: 'aliases'
+
+    Node 0xffd501a0
+        decode-complete:  
+        aligned-allocator:  
+        relative-addressing:  
+        name: 'openprom'
+
+    Node 0xffd50240
+        name: 'bootflash'
+
+    Node 0xffd506a0
+        name: 'chosen'
+
+    Node 0xffd50700
+        device_type: 'hierarchical'
+        ranges:  00000000.00000000.00000000.300c0000.00000100
+        name: 'obio'
+
+        Node 0xffd508d0
+            address:  ffeef0ac
+            reg:  00000000.000000ac.0000001b
+            name: 'counter'
+
+        Node 0xffd50950
+            address:  ffeee064.ffeed070
+            reg:  00000000.00000064.0000000c.00000000.00000070.0000001c
+            name: 'interrupt'
+
+    Node 0xffd51290
+        reg:  00000000.00000000.02000000.00000000.02000000.02000000
+        available:  00000000.03f80000.0002a000.00000000.00000000.03f40000
+        name: 'memory'
+
+    Node 0xffd513b0
+        available:  00000000.fff00000.00100000.00000000.fef00000.00e00000.00000000.00000000.fe400000.00000000.ffede000.00001000.00000000.ffe34000.00099000.00000000.ffd00000.00030000.00000000.fe400000.00900000
+        reg:  00000000.00000000.80000000.00000000.80000000.80000000
+        name: 'virtual-memory'
+
+    Node 0xffd63510
+        bus-range:  00000000.00000000
+        address:  ffee4000.ffee3000.ffee2000.ffee1000.ffee0000.ffedf000
+        slot-name:  00000004.33322d62.69742073.6c6f7420.3200
+        clock-frequency:  01f78a40
+        ranges:  00000000.00000000.00000000.00000000.00000000.00000000.00000000.01000000.00000000.33000000.00000000.33000000.00000000.01000000.02000000.00000000.34000000.00000000.34000000.00000000.04000000.02000000.00000000.38000000.00000000.38000000.00000000.08000000
+        reg:  00000000.300c0000.00000100.00000000.30000000.00001000.00000000.30080000.00000004.00000000.300a0000.00000004.00000000.300e0000.00000004.00000000.300f0000.00000004
+        compatible: 'pci108e,8000'
+        thermal-interrupt:  
+        bus-parity-generated:  
+        #size-cells:  00000002
+        #address-cells:  00000003
+        device_type: 'pci'
+        name: 'pci'
+
+        Node 0xffd640d0
+            66mhz-capable:  00000000
+            udf-supported:  00000000
+            fast-back-to-back:  00000001
+            devsel-speed:  00000001
+            class-code:  00068000
+            max-latency:  00000019
+            min-grant:  0000000a
+            revision-id:  00000001
+            device-id:  00001000
+            vendor-id:  0000108e
+            ranges:  00000010.00000000.02000010.00000000.00000000.01000000.00000014.01000000.02000014.00000000.00000000.00800000
+            reg:  00000000.00000000.00000000.00000000.00000000.82000010.00000000.3e000000.00000000.01000000.82000014.00000000.38800000.00000000.00800000
+            interrupts:  00000002
+            #size-cells:  00000001
+            #address-cells:  00000002
+            name: 'ebus'
+
+            Node 0xffd644d0
+                address:  ffeea000.ffee9000.ffee8000.ffee7000.ffee6000
+                reg:  00000014.00726000.00000004.00000014.00728000.00000004.00000014.0072a000.00000004.00000014.0072c000.00000004.00000014.0072f000.00000004
+                name: 'auxio'
+
+            Node 0xffd64580
+                reg:  00000014.00724000.00000004
+                name: 'power'
+
+            Node 0xffd64600
+                interrupts:  00000003
+                compatible: 'pnpPNP501'
+                reg:  00000014.003003f8.00000008
+                name: 'se'
+
+            Node 0xffd64cd0
+                interrupts:  00000001
+                compatible: 'pnpPNP401'
+                reg:  00000014.003043bc.00000010.00000014.0030015c.00000002.00000014.00700000.00000010
+                name: 'parallel'
+
+            Node 0xffd64dd0
+                internal-loopback:  
+                dma-model: 'eb2dma'
+                interrupts:  00000002
+                reg:  00000014.00200000.00000100.00000014.00702000.00000010.00000014.00704000.00000010.00000014.00722000.00000004
+                name: 'SUNW,CS4231'
+
+            Node 0xffd64ef0
+                address:  ffeeb000
+                reg:  00000014.00000000.00002000
+                model: 'mk48t08'
+                name: 'eeprom'
+
+            Node 0xffd64fb0
+                #size-cells:  00000000
+                #address-cells:  00000001
+                reg:  00000014.00300060.00000008.00000014.00300060.00000008
+                device_type: '8042'
+                name: '8042'
+                model: 'INTC,80c42'
+                interrupts:  00000004
+
+                Node 0xffd65860
+                    reg:  00000000
+                    layout: '??'
+                    compatible: 'IBM,ps2-keyboard'
+                    device_type: 'serial'
+                    name: 'keyboard'
+
+                Node 0xffd666d0
+                    reg:  00000001
+                    compatible: 'IBM,ps2-mouse'
+                    device_type: 'serial'
+                    name: 'mouse'
+
+        Node 0xffd674e0
+            character-set: 'ISO8859-1'
+            assigned-addresses:  82008010.00000000.39000000.00000000.01000000.82008030.00000000.3a000000.00000000.00010000
+            66mhz-capable:  00000000
+            udf-supported:  00000000
+            fast-back-to-back:  00000000
+            devsel-speed:  00000001
+            class-code:  00030000
+            max-latency:  00000000
+            min-grant:  00000000
+            revision-id:  00000002
+            device-id:  00001682
+            vendor-id:  000010ea
+            iso6429-1983-colors:  
+            linebytes:  00000400
+            depth:  00000008
+            height:  00000300
+            width:  00000400
+            reg:  00008000.00000000.00000000.00000000.00000000.02008010.00000000.00000000.00000000.01000000.81008000.00000000.00000000.00000000.00010000.02008030.00000000.00000000.00000000.00010000
+            model: '1724PCIb'
+            device_type: 'display'
+            name: 'IGS'
+            interrupts:  00000001
+
+        Node 0xffd689b0
+            mac-address:  0800207f.f9fa
+            assigned-addresses:  82000110.00000000.3a010000.00000000.00007020
+            hm-rev:  000000c1
+            66mhz-capable:  00000000
+            udf-supported:  00000000
+            fast-back-to-back:  00000001
+            devsel-speed:  00000001
+            class-code:  00020000
+            max-latency:  00000005
+            min-grant:  0000000a
+            revision-id:  00000001
+            device-id:  00001001
+            vendor-id:  0000108e
+            device_type: 'network'
+            intr:  00000032.00000000
+            interrupts:  00000001
+            address-bits:  00000030
+            max-frame-size:  00004000
+            reg:  00000100.00000000.00000000.00000000.00000000.02000110.00000000.00000000.00000000.00007020
+            compatible: 'SUNW,hme'
+            name: 'network'
+
+    Node 0xffd730d0
+        context-table:  00000000.03fff000.00001000
+        psr-implementation:  00000000
+        psr-version:  00000004
+        implementation:  00000000
+        version:  00000004
+        cache-line-size:  00000020
+        cache-nlines:  00000200
+        page-size:  00001000
+        dcache-line-size:  00000010
+        dcache-nlines:  00000200
+        dcache-associativity:  00000001
+        icache-line-size:  00000020
+        icache-nlines:  00000200
+        icache-associativity:  00000001
+        ncaches:  00000002
+        mmu-nctx:  00000100
+        clock-frequency:  05e69ec0
+        sparc-version:  00000008
+        mask_rev:  00000034
+        device_type: 'cpu'
+        name: 'LSI,L2A0925'
+

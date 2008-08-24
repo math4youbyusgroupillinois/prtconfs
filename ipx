@@ -1,0 +1,216 @@
+System Configuration:  Sun Microsystems  sun4c
+Memory size: 64 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xffea6240
+    fb:  ffebe48c
+    idprom:  01570800.200bd78a.28974eb8.204d868a.00000000.00000000.a5a5a5a5.a5a5a5a5
+    stdout-path: '/sbus@1,f8000000/cgsix@3,0'
+    stdin-path: '/zs@1,f0000000'
+    parity-calculated:  
+    slave-only:  00000000
+    mips-on:  00000028
+    mmu-nctx:  00000008
+    vac_hwflush:  00000001
+    vac-linesize:  00000020
+    buserr-type:  00000001
+    clock-frequency:  02625a00
+    name: 'SUNW,Sun 4/50'
+    get-unum:  ffe8f298
+    device_type: 'cpu'
+    busmaster-regval:  00000007
+    mips-off:  00000003
+    mmu-npmg:  00000100
+    vac-size:  00010000
+
+    Node 0xffea92b8
+        name: 'packages'
+
+        Node 0xffeb09ac
+            name: 'disk-label'
+
+        Node 0xffeb1ed4
+            name: 'deblocker'
+
+        Node 0xffeb209c
+            name: 'obp-tftp'
+
+    Node 0xffeaa1d4
+        relative-addressing:  
+        name: 'openprom'
+
+    Node 0xffeaa224
+        port-b-ignore-cd:  
+        port-a-ignore-cd:  
+        address:  ffeeb000
+        device_type: 'serial'
+        slave:  00000000
+        intr:  0000000c.00000000
+        reg:  00000001.f1000000.00000008
+        name: 'zs'
+
+    Node 0xffeaa2c8
+        address:  ffee9000
+        port-b-ignore-cd:  
+        port-a-ignore-cd:  
+        keyboard:  
+        device_type: 'serial'
+        slave:  00000001
+        intr:  0000000c.00000000
+        reg:  00000001.f0000000.00000008
+        name: 'zs'
+
+    Node 0xffeaa3b8
+        intr:  0000000d.00000000
+        reg:  00000001.f7201000.00000008
+        name: 'audio'
+
+    Node 0xffeaa42c
+        address:  ffeea000
+        reg:  00000001.f2000000.00000800
+        model: 'mk48t02'
+        name: 'eeprom'
+
+    Node 0xffeaa4a0
+        address:  ffeef000
+        intr:  0000000a.00000000.0000000e.00000000
+        reg:  00000001.f3000000.00000010
+        name: 'counter-timer'
+
+    Node 0xffeaa524
+        address:  ffeee000
+        reg:  00000001.f4000000.00000004
+        name: 'memory-error'
+
+    Node 0xffeaa588
+        address:  ffeed000
+        reg:  00000001.f5000000.00000001
+        name: 'interrupt-enable'
+
+    Node 0xffeaa5f0
+        address:  ffeec003
+        reg:  00000001.f7400003.00000001
+        name: 'auxiliary-io'
+
+    Node 0xffeaa654
+        scsi-initiator-id:  00000007
+        burst-sizes:  0000007f
+        clock-frequency:  01312d00
+        ranges:  00000000.00000000.00000001.f8000000.02000000.00000001.00000000.00000001.fa000000.02000000.00000002.00000000.00000001.fc000000.02000000.00000003.00000000.00000001.fe000000.02000000
+        slot-address-bits:  00000019
+        reg:  00000001.f8000000.08000000
+        device_type: 'hierarchical'
+        name: 'sbus'
+
+        Node 0xffebab00
+            reg:  00000000.00400000.00000010
+            name: 'dma'
+
+        Node 0xffebab44
+            device_type: 'hierarchical'
+            intr:  00000003.00000000
+            reg:  00000000.00800000.00000040
+            name: 'esp'
+
+            Node 0xffebbea0
+                device_type: 'block'
+                name: 'sd'
+
+            Node 0xffebc890
+                device_type: 'byte'
+                name: 'st'
+
+        Node 0xffebd1b0
+            device_type: 'network'
+            busmaster-regval:  00000007
+            intr:  00000005.00000000
+            reg:  00000000.00c00000.00000004
+            alias: 'le'
+            name: 'le'
+
+        Node 0xffebe48c
+            address:  ffd82000
+            intr:  00000007.00000000
+            reg:  00000003.00000000.01000000
+            dblbuf:  00000000
+            vmsize:  00000001
+            depth:  00000008
+            height:  00000384
+            awidth:  00000480
+            linebytes:  00000480
+            width:  00000480
+            emulation: 'cgsix'
+            montype:  00000004
+            boardrev:  00000008
+            pixfreq:  064abba8
+            hfreq:  00011825
+            vfreq:  0000004c
+            hbporch:  000000d0
+            hsync:  00000060
+            hfporch:  00000010
+            vbporch:  00000021
+            vsync:  00000008
+            vfporch:  00000002
+            oscillators: '92940500 105561000'
+            chiprev:  00000005
+            device_type: 'display'
+            model: 'SUNW,501-1672'
+            name: 'cgsix'
+
+    Node 0xffeabf4c
+        reg:  00000000.00000000.01000000.00000000.01000000.01000000.00000000.02000000.01000000.00000000.03000000.01000000
+        available:  00000000.03fc6000.0003a000.00000000.01000000.02fbf000.00000000.00000000.00fef000
+        name: 'memory'
+
+    Node 0xffeac158
+        available:  00000000.fff00000.00100000.00000000.ff000000.00d00000.00000000.e0000000.1e000000.00000000.00000000.20000000.00000000.ffeda000.0000a000.00000000.ffd00000.00082000.00000000.fe000000.01000000
+        reg:  00000000.00000000.20000000.00000000.e0000000.20000000
+        name: 'virtual-memory'
+
+    Node 0xffeb6eb8
+        device_type: 'block'
+        intr:  0000000b.00000000
+        reg:  00000001.f7200000.00000008
+        name: 'fd'
+
+    Node 0xffeb9068
+        name: 'options'
+        selftest-#megs: '1'
+        oem-logo:  
+        oem-logo?: 'false'
+        oem-banner:  
+        oem-banner?: 'false'
+        output-device: 'screen'
+        input-device: 'keyboard'
+        sbus-probe-list: '0123'
+        keyboard-click?: 'false'
+        keymap:  
+        ttyb-rts-dtr-off: 'false'
+        ttyb-ignore-cd: 'true'
+        ttya-rts-dtr-off: 'false'
+        ttya-ignore-cd: 'true'
+        ttyb-mode: '9600,8,n,1,-'
+        ttya-mode: '9600,8,n,1,-'
+        diag-file:  
+        diag-device: 'net'
+        boot-file:  
+        boot-device: 'disk3'
+        auto-boot?: 'true'
+        watchdog-reboot?: 'false'
+        fcode-debug?: 'false'
+        local-mac-address?: 'false'
+        use-nvramrc?: 'false'
+        nvramrc:  
+        screen-#columns: '80'
+        screen-#rows: '34'
+        sunmon-compat?: 'true'
+        security-mode: 'none'
+        security-password:  
+        security-#badlogins: '0'
+        scsi-initiator-id: '7'
+        hardware-revision:  
+        last-hardware-update:  
+        testarea: '85'
+        mfg-switch?: 'false'
+        diag-switch?: 'false'
+

@@ -1,0 +1,1021 @@
+System Configuration:  Sun Microsystems  sun4u
+Memory size: 1536 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xf0029588
+    previous-reset-reason:  'POR'
+    reset-reason:  'S-POR'
+    fatal-reset-info:  00006000
+    banner-name:  '8-slot Ultra Enterprise 4000/5000'
+    clock-frequency:  04e33880
+    idprom:  01800800.2081e21e.00000000.81e21ea9.00000000.00000000.00000000.00000000
+    breakpoint-trap:  0000007f
+    #size-cells:  00000002
+    name:  'SUNW,Ultra-Enterprise'
+
+    Node 0xf002c7b4
+        name:  'packages'
+
+        Node 0xf0035d84
+            iso6429-1983-colors:  
+            name:  'terminal-emulator'
+
+        Node 0xf0038af0
+            disk-write-fix:  
+            name:  'deblocker'
+
+        Node 0xf00391b4
+            name:  'obp-tftp'
+
+        Node 0xf0042dfc
+            name:  'disk-label'
+
+        Node 0xf00b2b98
+            support:  
+            name:  'ufs-file-system'
+
+    Node 0xf002c824
+        stdout:  fff4fda0
+        stdin:  fff4f940
+        eeprom:  f005bf5c
+        mmu:  fffea438
+        memory:  fffea638
+        bootargs:  00
+        bootpath:  '/sbus@3,0/QLGC,isp@0,10000/sd@0,0:a'
+        gateway-ip:  00000000
+        server-ip:  00000000
+        client-ip:  00000000
+        stdout-#lines:  ffffffff
+        name:  'chosen'
+
+    Node 0xf002c890
+        version:  'OBP 3.2.7 1997/02/04 13:27'
+        model:  'SUNW,3.2'
+        decode-complete:  
+        aligned-allocator:  
+        relative-addressing:  
+        name:  'openprom'
+
+        Node 0xf002c920
+            name:  'client-services'
+
+    Node 0xf002c9c8
+        disabled-memory-list:  
+        disabled-board-list:  
+        memory-interleave:  'max'
+        configuration-policy:  'component'
+        scsi-initiator-id:  '7'
+        keyboard-click?:  'false'
+        keymap:  
+        ttyb-rts-dtr-off:  'false'
+        ttyb-ignore-cd:  'true'
+        ttya-rts-dtr-off:  'false'
+        ttya-ignore-cd:  'true'
+        ttyb-mode:  '9600,8,n,1,-'
+        ttya-mode:  '9600,8,n,1,-'
+        sbus-specific-probe:  
+        sbus-probe-default:  'd3120'
+        mfg-mode:  'off '
+        diag-level:  'min'
+        powerfail-time:  '0'
+        #power-cycles:  '1426063388'
+        fcode-debug?:  'false'
+        output-device:  'screen'
+        input-device:  'keyboard'
+        load-base:  '16384'
+        boot-command:  'boot'
+        auto-boot?:  'true'
+        watchdog-reboot?:  'false'
+        diag-file:  
+        diag-device:  'net'
+        boot-file:  
+        boot-device:  'disk diskbrd diskisp disksoc net'
+        local-mac-address?:  'false'
+        ansi-terminal?:  'true'
+        screen-#columns:  '80'
+        screen-#rows:  '34'
+        silent-mode?:  'false'
+        use-nvramrc?:  'true'
+        nvramrc:  ': cp-nvram copy-nvram sys-stat1-pa ; patch cp-nvram sys-stat1-pa power-off'
+        security-mode:  'none'
+        security-password:  
+        security-#badlogins:  '0'
+        oem-logo:  
+        oem-logo?:  'false'
+        oem-banner:  'a 1000  (ok to delete this data)'
+        oem-banner?:  'false'
+        hardware-revision:  
+        last-hardware-update:  
+        diag-switch?:  'false'
+        name:  'options'
+
+    Node 0xf002ca38
+        disk:  '/sbus@3,0/SUNW,fas@3,8800000/sd@0,0'
+        diskbrd:  '/sbus@3,0/SUNW,fas@3,8800000/sd@a,0'
+        diskisp:  '/sbus@3,0/QLGC,isp@0,10000/sd@0,0'
+        net:  '/sbus@3,0/SUNW,hme@3,8c00000'
+        cdrom:  '/sbus@3,0/SUNW,fas@3,8800000/sd@6,0:f'
+        tape:  '/sbus@3,0/SUNW,fas@3,8800000/st@4,0'
+        scsi:  '/sbus@3,0/SUNW,fas@3,8800000'
+        disk0:  '/sbus@3,0/SUNW,fas@3,8800000/sd@0,0'
+        disk1:  '/sbus@3,0/SUNW,fas@3,8800000/sd@1,0'
+        disk2:  '/sbus@3,0/SUNW,fas@3,8800000/sd@2,0'
+        disk3:  '/sbus@3,0/SUNW,fas@3,8800000/sd@3,0'
+        disk4:  '/sbus@3,0/SUNW,fas@3,8800000/sd@4,0'
+        disk5:  '/sbus@3,0/SUNW,fas@3,8800000/sd@5,0'
+        tape0:  '/sbus@3,0/SUNW,fas@3,8800000/st@4,0'
+        tape1:  '/sbus@3,0/SUNW,fas@3,8800000/st@5,0'
+        ttya:  '/central/fhc/zs@0,902000:a'
+        ttyb:  '/central/fhc/zs@0,902000:b'
+        keyboard:  '/central/fhc/zs@0,904000'
+        keyboard!:  '/central/fhc/zs@0,904000:forcemode'
+        name:  'aliases'
+
+    Node 0xf004d954
+        reg:  00000000.00000000.00000000.10000000.00000000.10000000.00000000.10000000.00000000.20000000.00000000.10000000.00000000.30000000.00000000.10000000.00000000.40000000.00000000.10000000.00000000.50000000.00000000.10000000
+        available:  00000000.5fe78000.00000000.00018000.00000000.03e00000.00000000.5a2e8000.00000000.00004000.00000000.03dfa000.00000000.00000000.00000000.00002000
+        name:  'memory'
+
+    Node 0xf004df34
+        translations:  
+        existing:  00000000.00000000.00000800.00000000.fffff800.00000000.00000800.00000000
+        available:  fffff800.00000000.000007fc.00000000.00000001.00000000.000007ff.00000000.00000000.ffff0000.00000000.0000e000.00000000.50322000.00000000.9fcde000.00000000.11ac0000.00000000.3e542000.00000000.11428000.00000000.00058000.00000000.00000000.00000000.10000000.00000000.fff00000.00000000.00002000.00000000.f0800000.00000000.0f67c000
+        page-size:  00002000
+        name:  'virtual-memory'
+
+    Node 0xf005bc48
+        ranges:  00000000.f8000000.000001ff.f8000000.08000000
+        reg:  000001ff.00000000.00000000.08000000
+        name:  'central'
+
+        Node 0xf005bd9c
+            board-model:  'SUNW,501-2511'
+            ranges:  00000000.00000000.00000000.f8000000.08000000
+            reg:  00000000.f8800000.00000110.00000000.f8802000.00000010.00000000.f8804000.00000020.00000000.f8806000.00000020.00000000.f8808000.00000020.00000000.f880a000.00000020
+            name:  'fhc'
+
+            Node 0xf005bf5c
+                address:  fff62000
+                watchdog-enable:  
+                interrupts:  0000003a
+                reg:  00000000.00908000.00002000
+                model:  'mk48t59'
+                name:  'eeprom'
+
+            Node 0xf005c08c
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                address:  fff66000
+                interrupts:  00000039
+                device_type:  'serial'
+                reg:  00000000.00902000.00000008
+                name:  'zs'
+
+            Node 0xf005c164
+                address:  fff04000
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                keyboard:  
+                interrupts:  00000039
+                device_type:  'serial'
+                reg:  00000000.00904000.00000008
+                name:  'zs'
+
+            Node 0xf005c2ac
+                reg:  00000000.00900000.00000006.00000000.00906000.00000060.00000000.0090c000.00000001
+                interrupts:  00000038
+                name:  'clock-board'
+
+    Node 0xf006b194
+        board-type:  'cpu'
+        board-model:  'SUNW,501-2557'
+        ranges:  00000000.00000000.000001c0.f8000000.08000000
+        central-space:  
+        board#:  00000000
+        reg:  000001c0.f8800000.00000000.00000110.000001c0.f8802000.00000000.00000010.000001c0.f8804000.00000000.00000020.000001c0.f8806000.00000000.00000020.000001c0.f8808000.00000000.00000020.000001c0.f880a000.00000000.00000020
+        manfid#:  0000003e
+        version#:  00000001
+        model:  'SUNW,fhc0FA0'
+        name:  'fhc'
+
+        Node 0xf006b3e0
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            bank-0-status:  'ok'
+            bank-1-status:  'nomem'
+            manfid#:  0000003e
+            version#:  00000005
+            model:  'SUNW,ac0F9E'
+            device_type:  'memory-controller'
+            name:  'ac'
+
+        Node 0xf006b568
+            reg:  00000000.00600000.00000010
+            name:  'simm-status'
+
+        Node 0xf006b600
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf006b6bc
+            reg:  00000000.00200000.00008000.00000000.00280000.00008000
+            name:  'sram'
+
+        Node 0xf006b758
+            version:  4f425020.2020332e.322e3720.31393937.2f30322f.30342031.333a3237.00504f53.54202033.2e352e31.20313939.372f3031.2f333020.31353a32.3900
+            model:  'SUNW,525-1431'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+    Node 0xf006b89c
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000000
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001c0.00000000.00000000.00000008
+        board#:  00000000
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006bc5c
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000001
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001c2.00000000.00000000.00000008
+        board#:  00000000
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006c01c
+        board-type:  'cpu'
+        board-model:  'SUNW,501-2557'
+        ranges:  00000000.00000000.000001c8.f8000000.08000000
+        board#:  00000002
+        reg:  000001c8.f8800000.00000000.00000110.000001c8.f8802000.00000000.00000010.000001c8.f8804000.00000000.00000020.000001c8.f8806000.00000000.00000020.000001c8.f8808000.00000000.00000020.000001c8.f880a000.00000000.00000020
+        manfid#:  0000003e
+        version#:  00000001
+        model:  'SUNW,fhc0FA0'
+        name:  'fhc'
+
+        Node 0xf006c244
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            bank-0-status:  'ok'
+            bank-1-status:  'nomem'
+            manfid#:  0000003e
+            version#:  00000005
+            model:  'SUNW,ac0F9E'
+            device_type:  'memory-controller'
+            name:  'ac'
+
+        Node 0xf006c3cc
+            reg:  00000000.00600000.00000010
+            name:  'simm-status'
+
+        Node 0xf006c464
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf006c520
+            reg:  00000000.00200000.00008000.00000000.00280000.00008000
+            name:  'sram'
+
+        Node 0xf006c5bc
+            version:  4f425020.2020332e.322e3720.31393937.2f30322f.30342031.333a3237.00504f53.54202033.2e352e31.20313939.372f3031.2f333020.31353a32.3900
+            model:  'SUNW,525-1431'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+    Node 0xf006c700
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000004
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001c8.00000000.00000000.00000008
+        board#:  00000002
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006cac0
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000005
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001ca.00000000.00000000.00000008
+        board#:  00000002
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006ce80
+        board-type:  'cpu'
+        board-model:  'SUNW,501-2557'
+        ranges:  00000000.00000000.000001d0.f8000000.08000000
+        board#:  00000004
+        reg:  000001d0.f8800000.00000000.00000110.000001d0.f8802000.00000000.00000010.000001d0.f8804000.00000000.00000020.000001d0.f8806000.00000000.00000020.000001d0.f8808000.00000000.00000020.000001d0.f880a000.00000000.00000020
+        manfid#:  0000003e
+        version#:  00000001
+        model:  'SUNW,fhc0FA0'
+        name:  'fhc'
+
+        Node 0xf006d0a8
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            bank-0-status:  'ok'
+            bank-1-status:  'nomem'
+            manfid#:  0000003e
+            version#:  00000005
+            model:  'SUNW,ac0F9E'
+            device_type:  'memory-controller'
+            name:  'ac'
+
+        Node 0xf006d230
+            reg:  00000000.00600000.00000010
+            name:  'simm-status'
+
+        Node 0xf006d2c8
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf006d384
+            reg:  00000000.00200000.00008000.00000000.00280000.00008000
+            name:  'sram'
+
+        Node 0xf006d420
+            version:  4f425020.2020332e.322e3720.31393937.2f30322f.30342031.333a3237.00504f53.54202033.2e352e31.20313939.372f3031.2f333020.31353a32.3900
+            model:  'SUNW,525-1431'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+    Node 0xf006d564
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000008
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001d0.00000000.00000000.00000008
+        board#:  00000004
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006d924
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000009
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001d2.00000000.00000000.00000008
+        board#:  00000004
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006dce4
+        board-type:  'cpu'
+        board-model:  'SUNW,501-2557'
+        ranges:  00000000.00000000.000001d4.f8000000.08000000
+        board#:  00000005
+        reg:  000001d4.f8800000.00000000.00000110.000001d4.f8802000.00000000.00000010.000001d4.f8804000.00000000.00000020.000001d4.f8806000.00000000.00000020.000001d4.f8808000.00000000.00000020.000001d4.f880a000.00000000.00000020
+        manfid#:  0000003e
+        version#:  00000001
+        model:  'SUNW,fhc0FA0'
+        name:  'fhc'
+
+        Node 0xf006df0c
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            bank-0-status:  'ok'
+            bank-1-status:  'nomem'
+            manfid#:  0000003e
+            version#:  00000005
+            model:  'SUNW,ac0F9E'
+            device_type:  'memory-controller'
+            name:  'ac'
+
+        Node 0xf006e094
+            reg:  00000000.00600000.00000010
+            name:  'simm-status'
+
+        Node 0xf006e12c
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf006e1e8
+            reg:  00000000.00200000.00008000.00000000.00280000.00008000
+            name:  'sram'
+
+        Node 0xf006e284
+            version:  4f425020.2020332e.322e3720.31393937.2f30322f.30342031.333a3237.00504f53.54202033.2e352e31.20313939.372f3031.2f333020.31353a32.3900
+            model:  'SUNW,525-1431'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+    Node 0xf006e3c8
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  0000000a
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001d4.00000000.00000000.00000008
+        board#:  00000005
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006e788
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  0000000b
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001d6.00000000.00000000.00000008
+        board#:  00000005
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006eb48
+        board-type:  'cpu'
+        board-model:  'SUNW,501-2557'
+        ranges:  00000000.00000000.000001d8.f8000000.08000000
+        board#:  00000006
+        reg:  000001d8.f8800000.00000000.00000110.000001d8.f8802000.00000000.00000010.000001d8.f8804000.00000000.00000020.000001d8.f8806000.00000000.00000020.000001d8.f8808000.00000000.00000020.000001d8.f880a000.00000000.00000020
+        manfid#:  0000003e
+        version#:  00000001
+        model:  'SUNW,fhc0FA0'
+        name:  'fhc'
+
+        Node 0xf006ed70
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            bank-0-status:  'ok'
+            bank-1-status:  'nomem'
+            manfid#:  0000003e
+            version#:  00000005
+            model:  'SUNW,ac0F9E'
+            device_type:  'memory-controller'
+            name:  'ac'
+
+        Node 0xf006eef8
+            reg:  00000000.00600000.00000010
+            name:  'simm-status'
+
+        Node 0xf006ef90
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf006f04c
+            reg:  00000000.00200000.00008000.00000000.00280000.00008000
+            name:  'sram'
+
+        Node 0xf006f0e8
+            version:  4f425020.2020332e.322e3720.31393937.2f30322f.30342031.333a3237.00504f53.54202033.2e352e31.20313939.372f3031.2f333020.31353a32.3900
+            model:  'SUNW,525-1431'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+    Node 0xf006f22c
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  0000000c
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001d8.00000000.00000000.00000008
+        board#:  00000006
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006f5ec
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  0000000d
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001da.00000000.00000000.00000008
+        board#:  00000006
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf006f9ac
+        board-type:  'cpu'
+        board-model:  'SUNW,501-2557'
+        ranges:  00000000.00000000.000001dc.f8000000.08000000
+        board#:  00000007
+        reg:  000001dc.f8800000.00000000.00000110.000001dc.f8802000.00000000.00000010.000001dc.f8804000.00000000.00000020.000001dc.f8806000.00000000.00000020.000001dc.f8808000.00000000.00000020.000001dc.f880a000.00000000.00000020
+        manfid#:  0000003e
+        version#:  00000001
+        model:  'SUNW,fhc0FA0'
+        name:  'fhc'
+
+        Node 0xf006fbd4
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            bank-0-status:  'ok'
+            bank-1-status:  'nomem'
+            manfid#:  0000003e
+            version#:  00000005
+            model:  'SUNW,ac0F9E'
+            device_type:  'memory-controller'
+            name:  'ac'
+
+        Node 0xf006fd5c
+            reg:  00000000.00600000.00000010
+            name:  'simm-status'
+
+        Node 0xf006fdf4
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf006feb0
+            reg:  00000000.00200000.00008000.00000000.00280000.00008000
+            name:  'sram'
+
+        Node 0xf006ff4c
+            version:  4f425020.2020332e.322e3720.31393937.2f30322f.30342031.333a3237.00504f53.54202033.2e352e31.20313939.372f3031.2f333020.31353a32.3900
+            model:  'SUNW,525-1431'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+    Node 0xf0070090
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  0000000e
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001dc.00000000.00000000.00000008
+        board#:  00000007
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf0070450
+        manufacturer#:  00000017
+        implementation#:  00000011
+        mask#:  00000011
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00100000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  0000000f
+        clock-frequency:  0ec82e00
+        rated-frequency:  0ee6b280
+        reg:  000001de.00000000.00000000.00000008
+        board#:  00000007
+        device_type:  'cpu'
+        name:  'SUNW,UltraSPARC-II'
+
+    Node 0xf0070810
+        ranges:  00000001.00000000.000001c5.10000000.10000000.00000002.00000000.000001c5.20000000.10000000.0000000d.00000000.000001c5.d0000000.10000000
+        interrupts:  000000b4.000000b5.000000b6.000000a5.000000aa.000000b7
+        version#:  00000001
+        implementation#:  00000000
+        bus-parity-generated:  
+        address:  ffefa000
+        scsi-initiator-id:  00000007
+        model:  'SUNW,sysio'
+        reg:  000001c4.00000000.00000000.00006000
+        slot-address-bits:  0000001c
+        up-burst-sizes:  0078007f
+        burst-sizes:  00f8007f
+        device_type:  'sbus'
+        name:  'sbus'
+        upa-portid:  00000002
+        clock-frequency:  017d7840
+        board#:  00000001
+
+        Node 0xf007be40
+            soc-config:  00000000
+            port-wwns:  20000800.20ffffff.20010800.20ffffff
+            soc-wwn:  10000800.20ffffff
+            intr:  00000003.00000000
+            interrupts:  00000022
+            reg:  0000000d.00010000.00010010
+            soc-fcode:  '1.3 95/09/28'
+            manufacturer:  'SUNW'
+            model:  '501-2069'
+            name:  'SUNW,soc'
+
+    Node 0xf007309c
+        board-type:  'dual-sbus'
+        manfid#:  0000003e
+        version#:  00000001
+        ranges:  00000000.00000000.000001c4.f8000000.08000000
+        reg:  000001c4.f8800000.00000000.00000110.000001c4.f8802000.00000000.00000010.000001c4.f8804000.00000000.00000020.000001c4.f8806000.00000000.00000020.000001c4.f8808000.00000000.00000020.000001c4.f880a000.00000000.00000020
+        board-model:  'SUNW,501-2558'
+        model:  'SUNW,fhc0FA0'
+        board#:  00000001
+        name:  'fhc'
+
+        Node 0xf007356c
+            manfid#:  0000003e
+            version#:  00000005
+            device_type:  'memory-controller'
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            model:  'SUNW,ac0F9E'
+            name:  'ac'
+
+        Node 0xf00736a4
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf0073760
+            version:  46434f44.4520312e.372e3020.31393936.2f30352f.33302031.313a3137.0069504f.53542033.2e342e31.20313939.362f3130.2f313520.31373a30.3900
+            model:  'SUNW,525-1432'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+        Node 0xf0073b98
+            address:  ffede000
+            interrupts:  0000003a
+            reg:  00000000.00300000.00002000
+            model:  'mk48t59'
+            name:  'eeprom'
+
+        Node 0xf0073c90
+            reg:  00000000.00500000.00000010
+            name:  'sbus-speed'
+
+    Node 0xf0073d80
+        address:  ffeddc00.ffed9860.ffedb060
+        interrupts:  000000b0.000000b1
+        reg:  000001c4.00003c00.00000000.00000020.000001c4.00003860.00000000.00000010.000001c4.00003060.00000000.00000010
+        name:  'counter-timer'
+
+    Node 0xf0073f50
+        ranges:  00000000.00000000.000001c7.00000000.10000000.00000003.00000000.000001c7.30000000.10000000
+        interrupts:  000000f4.000000f5.000000f6.000000e5.000000ea.000000f7
+        version#:  00000001
+        implementation#:  00000000
+        bus-parity-generated:  
+        address:  ffed2000
+        scsi-initiator-id:  00000007
+        model:  'SUNW,sysio'
+        reg:  000001c6.00000000.00000000.00006000
+        slot-address-bits:  0000001c
+        up-burst-sizes:  0078007f
+        burst-sizes:  00f8007f
+        device_type:  'sbus'
+        name:  'sbus'
+        upa-portid:  00000003
+        clock-frequency:  017d7840
+        board#:  00000001
+
+        Node 0xf0083c20
+            hm-rev:  00000022
+            device_type:  'network'
+            intr:  00000004.00000000
+            interrupts:  00000004
+            address-bits:  00000030
+            max-frame-size:  00004000
+            reg:  00000003.08c00000.00000108.00000003.08c02000.00002000.00000003.08c04000.00002000.00000003.08c06000.00002000.00000003.08c07000.00000020
+            name:  'SUNW,hme'
+
+        Node 0xf008ab5c
+            hm-rev:  00000022
+            device_type:  'scsi'
+            clock-frequency:  02625a00
+            intr:  00000003.00000000
+            interrupts:  00000003
+            reg:  00000003.08800000.00000010.00000003.08810000.00000040
+            name:  'SUNW,fas'
+
+            Node 0xf008f8cc
+                device_type:  'block'
+                name:  'sd'
+
+            Node 0xf0090188
+                device_type:  'byte'
+                name:  'st'
+
+        Node 0xf0090e74
+            scsi-initiator-id:  00000007
+            differential:  00
+            isp-fcode:  '1.21 95/05/18'
+            device_type:  'scsi'
+            intr:  00000003.00000000
+            interrupts:  00000003
+            wide:  00
+            clock-frequency:  02625a00
+            reg:  00000000.00010000.00000450
+            64-bit-clean:  00
+            model:  'QLGC,ISP1000'
+            name:  'QLGC,isp'
+
+            Node 0xf0096704
+                device_type:  'block'
+                name:  'sd'
+
+            Node 0xf0096f18
+                device_type:  'byte'
+                name:  'st'
+
+    Node 0xf0076318
+        address:  ffec3c00.ffebf860.ffec1060
+        interrupts:  000000f0.000000f1
+        reg:  000001c6.00003c00.00000000.00000020.000001c6.00003860.00000000.00000010.000001c6.00003060.00000000.00000010
+        name:  'counter-timer'
+
+    Node 0xf00764e8
+        ranges:  00000001.00000000.000001cd.10000000.10000000.00000002.00000000.000001cd.20000000.10000000.0000000d.00000000.000001cd.d0000000.10000000
+        interrupts:  000001b4.000001b5.000001b6.000001a5.000001aa.000001b7
+        version#:  00000001
+        implementation#:  00000000
+        bus-parity-generated:  
+        address:  ffeb8000
+        scsi-initiator-id:  00000007
+        model:  'SUNW,sysio'
+        reg:  000001cc.00000000.00000000.00006000
+        slot-address-bits:  0000001c
+        up-burst-sizes:  0078007f
+        burst-sizes:  00f8007f
+        device_type:  'sbus'
+        name:  'sbus'
+        upa-portid:  00000006
+        clock-frequency:  017d7840
+        board#:  00000003
+
+        Node 0xf0097ae8
+            soc-config:  00000000
+            port-wwns:  20000800.20ffffff.20010800.20ffffff
+            soc-wwn:  10000800.20ffffff
+            intr:  00000003.00000000
+            interrupts:  00000022
+            reg:  0000000d.00010000.00010010
+            soc-fcode:  '1.3 95/09/28'
+            manufacturer:  'SUNW'
+            model:  '501-2069'
+            name:  'SUNW,soc'
+
+    Node 0xf0078954
+        board-type:  'dual-sbus'
+        manfid#:  0000003e
+        version#:  00000001
+        ranges:  00000000.00000000.000001cc.f8000000.08000000
+        reg:  000001cc.f8800000.00000000.00000110.000001cc.f8802000.00000000.00000010.000001cc.f8804000.00000000.00000020.000001cc.f8806000.00000000.00000020.000001cc.f8808000.00000000.00000020.000001cc.f880a000.00000000.00000020
+        board-model:  'SUNW,501-2558'
+        model:  'SUNW,fhc0FA0'
+        board#:  00000003
+        name:  'fhc'
+
+        Node 0xf0078e24
+            manfid#:  0000003e
+            version#:  00000005
+            device_type:  'memory-controller'
+            reg:  00000000.01000000.00008000.00000000.02000000.01000000
+            model:  'SUNW,ac0F9E'
+            name:  'ac'
+
+        Node 0xf0078f5c
+            interrupts:  0000003b
+            reg:  00000000.00400000.00000010
+            name:  'environment'
+
+        Node 0xf0079018
+            version:  46434f44.4520312e.372e3020.31393936.2f30352f.33302031.313a3137.0069504f.53542033.2e342e31.20313939.362f3130.2f313520.31373a30.3900
+            model:  'SUNW,525-1432'
+            reg:  00000000.00000000.00080000
+            name:  'flashprom'
+
+        Node 0xf0079450
+            address:  ffe9c000
+            interrupts:  0000003a
+            reg:  00000000.00300000.00002000
+            model:  'mk48t59'
+            name:  'eeprom'
+
+        Node 0xf0079548
+            reg:  00000000.00500000.00000010
+            name:  'sbus-speed'
+
+    Node 0xf0079638
+        address:  ffe9bc00.ffe97860.ffe99060
+        interrupts:  000001b0.000001b1
+        reg:  000001cc.00003c00.00000000.00000020.000001cc.00003860.00000000.00000010.000001cc.00003060.00000000.00000010
+        name:  'counter-timer'
+
+    Node 0xf0079808
+        ranges:  00000000.00000000.000001cf.00000000.10000000.00000003.00000000.000001cf.30000000.10000000
+        interrupts:  000001f4.000001f5.000001f6.000001e5.000001ea.000001f7
+        version#:  00000001
+        implementation#:  00000000
+        bus-parity-generated:  
+        address:  ffe90000
+        scsi-initiator-id:  00000007
+        model:  'SUNW,sysio'
+        reg:  000001ce.00000000.00000000.00006000
+        slot-address-bits:  0000001c
+        up-burst-sizes:  0078007f
+        burst-sizes:  00f8007f
+        device_type:  'sbus'
+        name:  'sbus'
+        upa-portid:  00000007
+        clock-frequency:  017d7840
+        board#:  00000003
+
+        Node 0xf009f4a8
+            hm-rev:  00000022
+            device_type:  'network'
+            intr:  00000004.00000000
+            interrupts:  00000004
+            address-bits:  00000030
+            max-frame-size:  00004000
+            reg:  00000003.08c00000.00000108.00000003.08c02000.00002000.00000003.08c04000.00002000.00000003.08c06000.00002000.00000003.08c07000.00000020
+            name:  'SUNW,hme'
+
+        Node 0xf00a5fc4
+            hm-rev:  00000022
+            device_type:  'scsi'
+            clock-frequency:  02625a00
+            intr:  00000003.00000000
+            interrupts:  00000003
+            reg:  00000003.08800000.00000010.00000003.08810000.00000040
+            name:  'SUNW,fas'
+
+            Node 0xf00aa914
+                device_type:  'block'
+                name:  'sd'
+
+            Node 0xf00ab1d0
+                device_type:  'byte'
+                name:  'st'
+
+        Node 0xf00abebc
+            scsi-initiator-id:  00000007
+            differential:  00
+            isp-fcode:  '1.21 95/05/18'
+            device_type:  'scsi'
+            intr:  00000003.00000000
+            interrupts:  00000003
+            wide:  00
+            clock-frequency:  02625a00
+            reg:  00000000.00010000.00000450
+            64-bit-clean:  00
+            model:  'QLGC,ISP1000'
+            name:  'QLGC,isp'
+
+            Node 0xf00b174c
+                device_type:  'block'
+                name:  'sd'
+
+            Node 0xf00b1f60
+                device_type:  'byte'
+                name:  'st'
+
+    Node 0xf007bbd0
+        address:  fff0fc00.fff0d860.fff0b060
+        interrupts:  000001f0.000001f1
+        reg:  000001ce.00003c00.00000000.00000020.000001ce.00003860.00000000.00000010.000001ce.00003060.00000000.00000010
+        name:  'counter-timer'
+
