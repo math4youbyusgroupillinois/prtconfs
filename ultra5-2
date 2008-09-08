@@ -1,0 +1,476 @@
+System Configuration:  Sun Microsystems  sun4u
+Memory size: 256 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xf0029828
+    .node:  f0029828
+    energystar-v2:  
+    reset-reason: 'S-POR'
+    idprom:  01800800.20e768e5.00000000.e768e5a9.00000000.00000000.00000000.00000000
+    interrupt-map:  0000003c.00000000.00000000.f005f2f8.80000033
+    interrupt-map-mask:  0000003e.00000000.00000000
+    #interrupt-cells:  00000001
+    #address-cells:  00000002
+    breakpoint-trap:  0000007f
+    #size-cells:  00000002
+    model: 'SUNW,375-0066'
+    name: 'SUNW,Ultra-5_10'
+    clock-frequency:  05f5e100
+    banner-name: 'Sun Ultra 5/10 UPA/PCI (UltraSPARC-IIi 400MHz)'
+    device_type: 'upa'
+
+    Node 0xf002ca6c
+        .node:  f002ca6c
+        name: 'packages'
+
+        Node 0xf0033bf0
+            .node:  f0033bf0
+            iso6429-1983-colors:  
+            name: 'terminal-emulator'
+
+        Node 0xf003692c
+            .node:  f003692c
+            disk-write-fix:  
+            name: 'deblocker'
+
+        Node 0xf0037008
+            .node:  f0037008
+            name: 'obp-tftp'
+
+        Node 0xf0041d40
+            .node:  f0041d40
+            name: 'disk-label'
+
+        Node 0xf005af9c
+            .node:  f005af9c
+            name: 'SUNW,builtin-drivers'
+
+        Node 0xf0068d08
+            .node:  f0068d08
+            name: 'sun-keyboard'
+
+    Node 0xf002cadc
+        .node:  f002cadc
+        stdout:  fff9b5e8
+        stdin:  fff9b860
+        mmu:  fffe8438
+        memory:  fffe8638
+        bootargs:  00
+        bootpath: '/pci@1f,0/pci@1,1/ide@3/disk@0,0:a'
+        stdout-#lines:  00000022
+        name: 'chosen'
+
+    Node 0xf002cb48
+        .node:  f002cb48
+        version: 'OBP 3.25.3 2000/06/29 14:12'
+        model: 'SUNW,3.25'
+        decode-complete:  
+        aligned-allocator:  
+        relative-addressing:  
+        name: 'openprom'
+
+        Node 0xf002cbd8
+            .node:  f002cbd8
+            name: 'client-services'
+
+    Node 0xf002cc80
+        .node:  f002cc80
+        tpe-link-test?: 'true'
+        scsi-initiator-id: '7'
+        keyboard-click?: 'false'
+        keymap:  
+        ttyb-rts-dtr-off: 'false'
+        ttyb-ignore-cd: 'true'
+        ttya-rts-dtr-off: 'false'
+        ttya-ignore-cd: 'true'
+        ttyb-mode: '9600,8,n,1,-'
+        ttya-mode: '9600,8,n,1,-'
+        pcia-probe-list: '1,2,3,4'
+        pcib-probe-list: '1,2,3'
+        mfg-mode: 'off'
+        diag-level: 'max'
+        #power-cycles: '78'
+        system-board-serial#:  
+        system-board-date:  
+        fcode-debug?: 'false'
+        output-device: 'screen'
+        input-device: 'keyboard'
+        load-base: '16384'
+        boot-command: 'boot'
+        auto-boot?: 'true'
+        watchdog-reboot?: 'false'
+        diag-file: '-r'
+        diag-device: 'net'
+        boot-file:  
+        boot-device: '/pci@1f,0/pci@1/scsi@1/disk@1,0:a disk:a disk:f net'
+        local-mac-address?: 'false'
+        ansi-terminal?: 'true'
+        screen-#columns: '80'
+        screen-#rows: '34'
+        silent-mode?: 'false'
+        use-nvramrc?: 'false'
+        nvramrc: 'devalias pgx24 /pci@1f,0/pci@1,1/SUNW,m64B'
+        security-mode: 'none'
+        security-password:  
+        security-#badlogins: '0'
+        oem-logo:  
+        oem-logo?: 'false'
+        oem-banner:  
+        oem-banner?: 'false'
+        hardware-revision:  
+        last-hardware-update:  
+        diag-switch?: 'false'
+        name: 'options'
+
+    Node 0xf002ccf0
+        .node:  f002ccf0
+        screen: '/pci@1f,0/pci@1,1/SUNW,m64B@2'
+        net: '/pci@1f,0/pci@1,1/network@1,1'
+        cdrom: '/pci@1f,0/pci@1,1/ide@3/cdrom@2,0:f'
+        disk: '/pci@1f,0/pci@1,1/ide@3/disk@0,0'
+        disk3: '/pci@1f,0/pci@1,1/ide@3/disk@3,0'
+        disk2: '/pci@1f,0/pci@1,1/ide@3/disk@2,0'
+        disk1: '/pci@1f,0/pci@1,1/ide@3/disk@1,0'
+        disk0: '/pci@1f,0/pci@1,1/ide@3/disk@0,0'
+        ide: '/pci@1f,0/pci@1,1/ide@3'
+        floppy: '/pci@1f,0/pci@1,1/ebus@1/fdthree'
+        ttyb: '/pci@1f,0/pci@1,1/ebus@1/se:b'
+        ttya: '/pci@1f,0/pci@1,1/ebus@1/se:a'
+        keyboard!: '/pci@1f,0/pci@1,1/ebus@1/su@14,3083f8:forcemode'
+        keyboard: '/pci@1f,0/pci@1,1/ebus@1/su@14,3083f8'
+        mouse: '/pci@1f,0/pci@1,1/ebus@1/su@14,3062f8'
+        name: 'aliases'
+
+    Node 0xf004c7a8
+        .node:  f004c7a8
+        reg:  00000000.00000000.00000000.08000000.00000000.10000000.00000000.08000000
+        available:  00000000.17f38000.00000000.00008000.00000000.17f00000.00000000.00036000.00000000.10000000.00000000.07efe000.00000000.00000000.00000000.08000000
+        name: 'memory'
+
+    Node 0xf004cd88
+        .node:  f004cd88
+        translations:  00000000.fffe0000.00000000.00010000.80000000.17f700b6.00000000.fffd8000.00000000.00008000.80000000.17f600b6.00000000.fffc4000.00000000.00010000.800001fe.0000008e.00000000.fffc2000.00000000.00002000.800001fe.0100008e.00000000.fffbe000.00000000.00004000.80000000.17f5c0b6.00000000.fffbc000.00000000.00002000.800001ff.f100008e.00000000.fffba000.00000000.00002000.800001ff.f100008e.00000000.fffb8000.00000000.00002000.800001ff.f172408e.00000000.fffb6000.00000000.00002000.800001ff.f172608e.00000000.fffb4000.00000000.00002000.800001ff.f172808e.00000000.fffb2000.00000000.00002000.800001ff.f172a08e.00000000.fffb0000.00000000.00002000.800001ff.f172c08e.00000000.fffae000.00000000.00002000.800001ff.f172e08e.00000000.fffac000.00000000.00002000.800001ff.f130808e.00000000.fffaa000.00000000.00002000.80000000.17efe0b6.00000000.fffa8000.00000000.00002000.80000000.17f580b6.00000000.fffa6000.00000000.00002000.800001ff.f130208e.00000000.fffa4000.00000000.00002000.800001ff.f170608e.00000000.fffa2000.00000000.00002000.800001ff.f172008e.00000000.fffa0000.00000000.00002000.800001ff.f130208e.00000000.fff9c000.00000000.00002000.80000000.17f460b6.00000000.fff9a000.00000000.00002000.80000000.17f4e0b6.00000000.fff92000.00000000.00004000.80000000.17f400b6.00000000.fe000000.00000000.01000000.800001ff.e100008e.00000000.f0086000.00000000.00002000.80000000.17f440b6.00000000.f0084000.00000000.00002000.80000000.17f480b6.00000000.f0080000.00000000.00004000.80000000.17f540b6.00000000.f0000000.00000000.00080000.80000000.17f800b6.00000000.40000000.00000000.00800000.80000000.10000036.00000000.00800000.00000000.00200000.80000000.00800036.00000000.00400000.00000000.00400000.80000000.10000036.00000000.00002000.00000000.003fe000.80000000.00002036
+        existing:  00000000.00000000.00000800.00000000.fffff800.00000000.00000800.00000000
+        available:  fffff800.00000000.000007fc.00000000.00000001.00000000.000007ff.00000000.00000000.ffff0000.00000000.0000e000.00000000.00000000.00000000.f0000000.00000000.fff9e000.00000000.00002000.00000000.fff96000.00000000.00004000.00000000.fff00000.00000000.00092000.00000000.f0800000.00000000.0d800000
+        page-size:  00002000
+        name: 'virtual-memory'
+
+    Node 0xf005f2f8
+        .node:  f005f2f8
+        bus-range:  00000000.00000002
+        available:  82000000.00000000.00005000.00000000.ffffb000.81000000.00000000.00000500.00000000.00fffb00
+        virtual-dma:  c0000000.20000000
+        #virtual-dma-size-cells:  00000001
+        #virtual-dma-addr-cells:  00000001
+        latency-timer:  
+        address:  fffc4000.fffc2000
+        button-interrupt:  
+        no-streaming-cache:  
+        clock-frequency:  03ef1480
+        upa-portid:  0000001f
+        66mhz-capable:  
+        interrupts:  000007f0.000007ee.000007ef.000007e5
+        ranges:  00000000.00000000.00000000.000001fe.01000000.00000000.01000000.01000000.00000000.00000000.000001fe.02000000.00000000.01000000.02000000.00000000.00000000.000001ff.00000000.00000001.00000000.03000000.00000000.00000000.000001ff.00000000.00000001.00000000
+        reg:  000001fe.00000000.00000000.00010000.000001fe.01000000.00000000.00000100
+        model: 'SUNW,sabre'
+        compatible:  70636931.3038652c.61303030.00706369.636c6173.732c3000
+        bus-parity-generated:  
+        #size-cells:  00000002
+        #address-cells:  00000003
+        device_type: 'pci'
+        name: 'pci'
+
+        Node 0xf005faec
+            .node:  f005faec
+            bus-range:  00000001.00000001
+            scsi-initiator-id:  00000007
+            compatible:  70636931.3038652c.35303030.00706369.636c6173.732c3036.30343030.00
+            66mhz-capable:  
+            fast-back-to-back:  
+            devsel-speed:  00000001
+            class-code:  00060400
+            revision-id:  00000013
+            device-id:  00005000
+            vendor-id:  0000108e
+            interrupt-map:  00010800.00000000.00000000.00000001.f005f2f8.00000021.00011000.00000000.00000000.00000001.f005f2f8.0000000f.00011800.00000000.00000000.00000001.f005f2f8.00000020
+            interrupt-map-mask:  00fff800.00000000.00000000.00000007
+            #interrupt-cells:  00000001
+            slot-names:  00000000
+            no-probe-list: '0'
+            clock-frequency:  01f78a40
+            model: 'SUNW,simba'
+            #address-cells:  00000003
+            #size-cells:  00000002
+            reg:  00000900.00000000.00000000.00000000.00000000
+            device_type: 'pci'
+            name: 'pci'
+
+            Node 0xf0060e3c
+                .node:  f0060e3c
+                fast-back-to-back:  
+                devsel-speed:  00000001
+                class-code:  00068000
+                max-latency:  00000019
+                min-grant:  0000000a
+                revision-id:  00000001
+                device-id:  00001000
+                vendor-id:  0000108e
+                interrupt-map:  00000014.003043bc.00000001.f005f2f8.00000022.00000014.00200000.00000001.f005f2f8.00000023.00000014.00200000.00000002.f005f2f8.00000024.00000014.00724000.00000001.f005f2f8.00000025.00000014.003023f0.00000001.f005f2f8.00000027.00000014.003083f8.00000001.f005f2f8.00000029.00000014.003062f8.00000001.f005f2f8.0000002a.00000014.00400000.00000001.f005f2f8.0000002b
+                interrupt-map-mask:  0000001f.00ffffff.00000003
+                #interrupt-cells:  00000001
+                ranges:  00000010.00000000.82010810.00000000.f0000000.01000000.00000014.00000000.82010814.00000000.f1000000.00800000
+                reg:  00010800.00000000.00000000.00000000.00000000.82010810.00000000.f0000000.00000000.01000000.82010814.00000000.f1000000.00000000.00800000
+                #size-cells:  00000001
+                #address-cells:  00000002
+                name: 'ebus'
+
+                Node 0xf0061378
+                    .node:  f0061378
+                    address:  fffb6000.fffb4000.fffb2000.fffb0000.fffaf000
+                    reg:  00000014.00726000.00000004.00000014.00728000.00000004.00000014.0072a000.00000004.00000014.0072c000.00000004.00000014.0072f000.00000004
+                    name: 'auxio'
+
+                Node 0xf0061438
+                    .node:  f0061438
+                    address:  fffb8000
+                    button:  
+                    interrupts:  00000001
+                    reg:  00000014.00724000.00000004
+                    name: 'power'
+
+                Node 0xf0061508
+                    .node:  f0061508
+                    freq-syn: 'MC12430'
+                    reg:  00000014.00504000.00000003
+                    name: 'SUNW,pll'
+
+                Node 0xf006159c
+                    .node:  f006159c
+                    port-b-ignore-cd:  
+                    port-a-ignore-cd:  
+                    interrupts:  00000001
+                    reg:  00000014.00400000.00000080
+                    device_type: 'serial'
+                    name: 'se'
+
+                Node 0xf0062ecc
+                    .node:  f0062ecc
+                    reg:  00000014.003083f8.00000008
+                    interrupts:  00000001
+                    port-a-ignore-cd:  
+                    keyboard:  
+                    device_type: 'serial'
+                    name: 'su'
+
+                Node 0xf006472c
+                    .node:  f006472c
+                    interrupts:  00000001
+                    port-a-ignore-cd:  
+                    mouse:  
+                    reg:  00000014.003062f8.00000008
+                    device_type: 'serial'
+                    name: 'su'
+
+                Node 0xf0064848
+                    .node:  f0064848
+                    interrupts:  00000001
+                    reg:  00000014.003043bc.00000010.00000014.0030015c.00000002.00000014.00700000.00000010
+                    name: 'ecpp'
+
+                Node 0xf0064948
+                    .node:  f0064948
+                    manual:  
+                    unit:  00000000
+                    address:  fffa63f0.fffa4000.fffa2000
+                    device_type: 'block'
+                    interrupts:  00000001
+                    reg:  00000014.003023f0.00000008.00000014.00706000.00000010.00000014.00720000.00000004
+                    name: 'fdthree'
+
+                Node 0xf0066438
+                    .node:  f0066438
+                    address:  fffba000
+                    reg:  00000014.00000000.00002000
+                    model: 'mk48t59'
+                    name: 'eeprom'
+
+                Node 0xf0066520
+                    .node:  f0066520
+                    version:  4f425020.332e3235.2e332032.3030302f.30362f32.39203134.3a313200.504f5354.20332e31.2e302032.3030302f.30362f32.37203133.3a353600
+                    model: 'SUNW,370-3697'
+                    reg:  00000010.00000000.00100000
+                    name: 'flashprom'
+
+                Node 0xf00665dc
+                    .node:  f00665dc
+                    model: 'SUNW,CS4231h'
+                    aux2: 'none'
+                    aux1: 'cdrom'
+                    interrupts:  00000001.00000002
+                    dma-model: 'eb2dma'
+                    reg:  00000014.00200000.00000100.00000014.00702000.00000010.00000014.00704000.00000010.00000014.00722000.00000004
+                    name: 'SUNW,CS4231'
+
+            Node 0xf006d780
+                .node:  f006d780
+                assigned-addresses:  82010910.00000000.e0000000.00000000.00007020
+                hm-rev:  000000c1
+                device_type: 'network'
+                interrupts:  00000001
+                address-bits:  00000030
+                max-frame-size:  00004000
+                reg:  00010900.00000000.00000000.00000000.00000000.02010910.00000000.00000000.00000000.00007020
+                compatible: 'SUNW,hme'
+                name: 'network'
+                fast-back-to-back:  
+                devsel-speed:  00000001
+                class-code:  00020000
+                max-latency:  00000005
+                min-grant:  0000000a
+                revision-id:  00000001
+                device-id:  00001001
+                vendor-id:  0000108e
+
+            Node 0xf0075788
+                .node:  f0075788
+                address:  fe000000
+                assigned-addresses:  82011010.00000000.e1000000.00000000.01000000.82011018.00000000.e2000000.00000000.00001000
+                aty,fcode: '1.60'
+                aty,card#: '109-41900-00'
+                aty,rom#: '113-41901-104'
+                model: 'ATY,GT-C'
+                name: 'SUNW,m64B'
+                pgx_version: '@(#)pgx24.fth 1.7 98/11/09 '
+                reg:  00011000.00000000.00000000.00000000.00000000.02011010.00000000.00000000.00000000.01000000.02011018.00000000.00000000.00000000.00001000
+                character-set: 'ISO8859-1'
+                device_type: 'display'
+                linebytes:  00000400
+                depth:  00000008
+                height:  00000300
+                width:  00000400
+                fb-memory:  00000004
+                aty,flags:  0000000b
+                aty,status:  00000000
+                edid:  00ffffff.ffffff00.0e119413.70821759.330b0103.0e1e1662.eac48a96.564d8d26.1e4f57af.ee000101.01010101.01010101.01010101.01016419.00404100.26301888.360030e4.10000018.000000fd.00384b1f.3d08000a.20202020.20200000.00fc0043.50512054.46543530.31356d0a.0000000d.0002081a.05531db2.0c790261.04b30028
+                fast-back-to-back:  
+                devsel-speed:  00000001
+                class-code:  00030000
+                interrupts:  00000001
+                max-latency:  00000000
+                min-grant:  00000008
+                revision-id:  0000005c
+                device-id:  00004750
+                vendor-id:  00001002
+
+            Node 0xf007dbf4
+                .node:  f007dbf4
+                assigned-addresses:  81011810.00000000.00c00000.00000000.00000008.81011814.00000000.00c00008.00000000.00000004.81011818.00000000.00c00010.00000000.00000008.8101181c.00000000.00c00018.00000000.00000004.81011820.00000000.00c00020.00000000.00000010
+                reg:  00011800.00000000.00000000.00000000.00000000.01011810.00000000.00000000.00000000.00000008.01011814.00000000.00000000.00000000.00000004.01011818.00000000.00000000.00000000.00000008.0101181c.00000000.00000000.00000000.00000004.01011820.00000000.00000000.00000000.00000010
+                compatible:  70636931.3039352c.36343600.70636931.3039352c.36343600.70636963.6c617373.2c303130.31386600
+                #address-cells:  00000002
+                device_type: 'ide'
+                name: 'ide'
+                fast-back-to-back:  
+                devsel-speed:  00000001
+                class-code:  0001018a
+                interrupts:  00000001
+                max-latency:  00000004
+                min-grant:  00000002
+                subsystem-vendor-id:  00001095
+                subsystem-id:  00000646
+                revision-id:  00000003
+                device-id:  00000646
+                vendor-id:  00001095
+
+                Node 0xf0080494
+                    .node:  f0080494
+                    device_type: 'block'
+                    name: 'disk'
+                    compatible: 'ide-disk'
+
+                Node 0xf0080b40
+                    .node:  f0080b40
+                    device_type: 'block'
+                    name: 'cdrom'
+                    compatible: 'ide-cdrom'
+
+        Node 0xf00600d4
+            .node:  f00600d4
+            bus-range:  00000002.00000002
+            scsi-initiator-id:  00000007
+            compatible:  70636931.3038652c.35303030.00706369.636c6173.732c3036.30343030.00
+            66mhz-capable:  
+            fast-back-to-back:  
+            devsel-speed:  00000001
+            class-code:  00060400
+            revision-id:  00000013
+            device-id:  00005000
+            vendor-id:  0000108e
+            interrupt-map:  00020800.00000000.00000000.00000001.f005f2f8.00000010.00020800.00000000.00000000.00000002.f005f2f8.00000011.00020800.00000000.00000000.00000003.f005f2f8.00000012.00020800.00000000.00000000.00000004.f005f2f8.00000013.00021000.00000000.00000000.00000001.f005f2f8.00000014.00021000.00000000.00000000.00000002.f005f2f8.00000015.00021000.00000000.00000000.00000003.f005f2f8.00000016.00021000.00000000.00000000.00000004.f005f2f8.00000017.00021800.00000000.00000000.00000001.f005f2f8.00000018.00021800.00000000.00000000.00000002.f005f2f8.00000019.00021800.00000000.00000000.00000003.f005f2f8.0000001a.00021800.00000000.00000000.00000004.f005f2f8.0000001b.00022000.00000000.00000000.00000001.f005f2f8.0000001c.00022000.00000000.00000000.00000002.f005f2f8.0000001d.00022000.00000000.00000000.00000003.f005f2f8.0000001e.00022000.00000000.00000000.00000004.f005f2f8.0000001f
+            interrupt-map-mask:  00fff800.00000000.00000000.00000007
+            #interrupt-cells:  00000001
+            slot-names:  0000001e.70636961.20736c6f.74203100.70636961.20736c6f.74203200.70636961.20736c6f.74203300.70636961.20736c6f.74203400
+            no-probe-list: '0'
+            clock-frequency:  01f78a40
+            model: 'SUNW,simba'
+            #address-cells:  00000003
+            #size-cells:  00000002
+            reg:  00000800.00000000.00000000.00000000.00000000
+            device_type: 'pci'
+            name: 'pci'
+
+            Node 0xf00815c8
+                .node:  f00815c8
+                assigned-addresses:  81020810.00000000.00000400.00000000.00000100.82020814.00000000.00002000.00000000.00000100.82020818.00000000.00004000.00000000.00001000
+                device_type: 'scsi-2'
+                clock-frequency:  02625a00
+                reg:  00020800.00000000.00000000.00000000.00000000.01020810.00000000.00000000.00000000.00000100.02020814.00000000.00000000.00000000.00000100.02020818.00000000.00000000.00000000.00001000
+                model: 'Symbios,53C875'
+                compatible: 'glm'
+                name: 'scsi'
+                devsel-speed:  00000001
+                class-code:  00010000
+                interrupts:  00000001
+                max-latency:  00000040
+                min-grant:  00000011
+                subsystem-vendor-id:  00001000
+                subsystem-id:  00001000
+                revision-id:  00000026
+                device-id:  0000000f
+                vendor-id:  00001000
+
+                Node 0xf0085400
+                    .node:  f0085400
+                    device_type: 'block'
+                    compatible: 'sd'
+                    name: 'disk'
+
+                Node 0xf0085fc4
+                    .node:  f0085fc4
+                    device_type: 'byte'
+                    compatible: 'st'
+                    name: 'tape'
+
+    Node 0xf006cd6c
+        .node:  f006cd6c
+        manufacturer#:  00000017
+        implementation#:  00000012
+        mask#:  00000091
+        sparc-version:  00000009
+        ecache-associativity:  00000001
+        ecache-line-size:  00000040
+        ecache-size:  00200000
+        #dtlb-entries:  00000040
+        dcache-associativity:  00000001
+        dcache-line-size:  00000020
+        dcache-size:  00004000
+        #itlb-entries:  00000040
+        icache-associativity:  00000002
+        icache-line-size:  00000020
+        icache-size:  00004000
+        upa-portid:  00000000
+        clock-frequency:  17d78400
+        reg:  000001c0.00000000.00000000.00000008
+        device_type: 'cpu'
+        name: 'SUNW,UltraSPARC-IIi'
+
