@@ -1,0 +1,306 @@
+System Configuration:  Sun Microsystems  sun4m
+Memory size: 80 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xffd2619c
+    clock-frequency:  03938700
+    idprom:  01800800.2020d348.00000000.35414721.55555555.55555555.55555555.55555555
+    banner-name:  'SPARCstation Voyager'
+    name:  'SUNW,S240'
+    breakpoint-trap:  0000007f
+    compatible: 'sun4m'
+    get-unum:  ffd125a0
+    stdout-path:  '/iommu@0,10000000/sbus@0,10001000/cgsix@3,0'
+    stdin-path:  '/obio/zs@0,0'
+
+    Node 0xffd27d90
+        name:  'packages'
+
+        Node 0xffd35d8c
+            name:  'disk-label'
+
+        Node 0xffd36130
+            disk-write-fix:  
+            name:  'deblocker'
+
+        Node 0xffd3c210
+            name:  'obp-tftp'
+
+    Node 0xffd27dc4
+        tpe-link-test?:  'true'
+        output-device:  'screen'
+        input-device:  'keyboard'
+        keyboard-click?:  'false'
+        keymap:  
+        ttyb-rts-dtr-off:  'false'
+        ttyb-ignore-cd:  'true'
+        ttya-rts-dtr-off:  'false'
+        ttya-ignore-cd:  'false'
+        ttyb-mode:  '9600,8,n,1,-'
+        ttya-mode:  '9600,8,n,1,-'
+        fcode-debug?:  'false'
+        local-mac-address?:  'false'
+        screen-#columns:  '80'
+        screen-#rows:  '34'
+        selftest-#megs:  '80'
+        scsi-initiator-id:  '7'
+        silent-mode?:  'false'
+        auto-boot?:  'true'
+        watchdog-reboot?:  'false'
+        diag-file:  
+        diag-device:  'net'
+        boot-file:  
+        boot-device:  'disk2:a disk1'
+        sbus-probe-list:  '40123'
+        use-nvramrc?:  'false'
+        nvramrc:  
+        sunmon-compat?:  'false'
+        security-mode:  'none'
+        security-password:  
+        security-#badlogins:  '0'
+        oem-logo:  
+        oem-logo?:  'false'
+        oem-banner:  
+        oem-banner?:  'false'
+        hardware-revision:  
+        last-hardware-update:  
+        testarea:  '0'
+        mfg-switch?:  'false'
+        diag-switch?:  'true'
+        name:  'options'
+
+    Node 0xffd27df8
+        screen:  '/iommu@0,10000000/sbus@0,10001000/cgsix@3,0'
+        ttyb:  '/obio/zs@0,100000:b'
+        ttya:  '/obio/zs@0,100000:a'
+        keyboard!:  '/obio/zs@0,0:forcemode'
+        keyboard:  '/obio/zs@0,0'
+        floppy:  '/obio/SUNW,fdtwo'
+        scsi:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000'
+        net-aui:  '/iommu/sbus/ledma@4,8400010:aui/le@4,8c00000'
+        net-tpe:  '/iommu/sbus/ledma@4,8400010:tpe/le@4,8c00000'
+        net:  '/iommu/sbus/ledma@4,8400010/le@4,8c00000'
+        disk:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/sd@3,0'
+        cdrom:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/sd@6,0:d'
+        tape:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/st@4,0'
+        tape0:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/st@4,0'
+        tape1:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/st@5,0'
+        disk3:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/sd@3,0'
+        disk2:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/sd@2,0'
+        disk1:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/sd@1,0'
+        disk0:  '/iommu/sbus/espdma@4,8400000/esp@4,8800000/sd@0,0'
+        name:  'aliases'
+
+    Node 0xffd2f014
+        decode-complete:  
+        aligned-allocator:  
+        relative-addressing:  
+        name:  'openprom'
+
+    Node 0xffd2f084
+        address:  ffee8000
+        reg:  00000000.10000000.00000300
+        page-size:  00001000
+        name:  'iommu'
+
+        Node 0xffd2f1c8
+            clock-frequency:  01312d00
+            scsi-initiator-id:  00000007
+            address:  ffee7000
+            ranges:  00000000.00000000.00000000.30000000.10000000.00000001.00000000.00000000.40000000.10000000.00000002.00000000.00000000.50000000.10000000.00000003.00000000.00000000.60000000.10000000.00000004.00000000.00000000.70000000.10000000
+            reg:  00000000.10001000.00000028
+            slot-address-bits:  0000001c
+            burst-sizes:  0000003f
+            device_type:  'hierarchical'
+            name:  'sbus'
+
+            Node 0xffd3d5a8
+                address:  ffee2000
+                interrupts:  00000002
+                reg:  00000004.01300000.00000010
+                name:  'SUNW,pmc'
+
+            Node 0xffd3fe38
+                reg:  00000004.08400000.00000010
+                name:  'espdma'
+
+                Node 0xffd40234
+                    device_type:  'scsi'
+                    clock-frequency:  02625a00
+                    intr:  00000024.00000000
+                    reg:  00000004.08800000.00000040.00000004.01300006.00000001
+                    name:  'esp'
+
+                    Node 0xffd420fc
+                        device_type:  'block'
+                        name:  'sd'
+
+                    Node 0xffd42814
+                        device_type:  'byte'
+                        name:  'st'
+
+            Node 0xffd42f58
+                reg:  00000004.0c800000.0000001c
+                intr:  00000033.00000000
+                interrupts:  00000002
+                name:  'SUNW,bpp'
+
+            Node 0xffd42fe4
+                cable-selection:  'tpe'
+                burst-sizes:  0000003f
+                reg:  00000004.08400010.00000020
+                name:  'ledma'
+
+                Node 0xffd43214
+                    mac-address:  08002020.d34800
+                    device_type:  'network'
+                    busmaster-regval:  00000007
+                    intr:  00000026.00000000
+                    alias:  'le'
+                    reg:  00000004.08c00000.00000004.00000004.01300005.00000001
+                    name:  'le'
+
+            Node 0xffd44478
+                interrupts:  00000004.00000007
+                reg:  00000000.00000000.00008000.00000000.00100000.00100000.00000000.00200000.00100000.00000000.00300000.00100000.00000000.00400000.00000036.00000000.00500000.00100000.00000000.00600000.00100000.00000000.00700000.00100000
+                name:  'SUNW,pcmcia'
+
+            Node 0xffd44554
+                interrupts:  00000006
+                reg:  00000001.00008000.00000040.00000001.00010000.00000040.00000001.00018000.00000080.00000001.00028000.00000040.00000001.00030000.00000040.00000001.00038000.00000080
+                name:  'SUNW,mic'
+
+            Node 0xffd4460c
+                output-line:  00000001
+                input-line:  00000001
+                output-headphone:  00000001
+                input-microphone:  00000001
+                speaker:  00000001
+                intr:  00000039.00000000
+                reg:  00000002.00010000.00000100
+                name:  'SUNW,DBRIe'
+
+            Node 0xffd44800
+                address:  ffde2000
+                character-set:  'ISO8859-1'
+                intr:  00000039.00000000
+                reg:  00000003.00000000.01000000.00000004.01300001.00000001
+                dblbuf:  00000000
+                vmsize:  00000001
+                depth:  00000008
+                height:  00000300
+                awidth:  00000400
+                linebytes:  00000400
+                width:  00000400
+                emulation:  'cgsix'
+                montype:  00000000
+                boardrev:  000000a9
+                pixfreq:  0337f980
+                hfreq:  0000000a
+                vfreq:  0000000a
+                hbporch:  00000008
+                hsync:  00000004
+                hfporch:  00000004
+                vbporch:  00000002
+                vsync:  00000001
+                vfporch:  00000001
+                name:  'cgsix'
+                fbmapped:  00100000
+                global-data:  ffef8d88
+                oscillators:  '74250000,64000000,108000000,94500000,54000000,47250000,81000000,84375000,63000000,9820000'
+                chiprev:  0000000b
+                device_type:  'display'
+                model:  'SUNW,501-2393'
+
+    Node 0xffd2f358
+        device_type:  'hierarchical'
+        ranges:  00000000.00000000.00000000.71000000.01000000
+        name:  'obio'
+
+        Node 0xffd2f4dc
+            port-b-ignore-cd:  
+            address:  ffeeb000
+            device_type:  'serial'
+            slave:  00000000
+            intr:  0000002c.00000000
+            interrupts:  0000000c
+            reg:  00000000.00100000.00000008
+            name:  'zs'
+
+        Node 0xffd2f590
+            address:  ffee5000.ffee4002
+            port-b-ignore-cd:  
+            port-a-ignore-cd:  
+            keyboard:  
+            device_type:  'serial'
+            slave:  00000001
+            intr:  0000002c.00000000
+            interrupts:  0000000c
+            reg:  00000000.00000000.00000008.00000000.00300002.00000001
+            name:  'zs'
+
+        Node 0xffd2f690
+            address:  ffee9000
+            reg:  00000000.00200000.00002000
+            model:  'mk48t08'
+            name:  'eeprom'
+
+        Node 0xffd2f6f8
+            reg:  00000000.00800000.00000001
+            name:  'slavioconfig'
+
+        Node 0xffd2f74c
+            address:  ffee6000
+            reg:  00000000.00900000.00000001
+            name:  'auxio'
+
+        Node 0xffd2f79c
+            address:  ffeef000.ffeee000
+            reg:  00000000.00d00000.00000010.00000000.00d10000.00000010
+            name:  'counter'
+
+        Node 0xffd2f7f8
+            address:  ffeed000.ffeec000
+            reg:  00000000.00e00000.00000010.00000000.00e10000.00000010
+            name:  'interrupt'
+
+        Node 0xffd3d614
+            pollable:  
+            device_type:  'block'
+            intr:  0000002b.00000000
+            interrupts:  0000000b
+            reg:  00000000.00400000.00000008
+            name:  'SUNW,fdtwo'
+
+    Node 0xffd30024
+        reg:  00000000.00000000.00800000.00000000.01000000.00800000.00000000.02000000.00800000.00000000.03000000.00800000.00000000.06000000.00800000.00000000.07000000.00800000.00000000.0a000000.00800000.00000000.0b000000.00800000.00000000.0e000000.00800000.00000000.0f000000.00800000
+        available:  00000000.0f797000.00013000.00000000.0f000000.00233000.00000000.0e000000.00800000.00000000.0b000000.00800000.00000000.0a000000.00800000.00000000.07000000.00800000.00000000.06000000.00800000.00000000.03000000.00800000.00000000.02000000.00800000.00000000.01000000.00800000.00000000.00000000.00800000
+        name:  'memory'
+
+    Node 0xffd300e0
+        available:  00000000.fff00000.00100000.00000000.fef00000.00e00000.00000000.f5b66000.0889a000.00000000.f5900000.00001000.00000000.f0400000.054c0000.00000000.f0140000.00100000.00000000.00000000.f0040000.00000000.ffd59000.00078000.00000000.ffd00000.0000e000.00000000.fe400000.00b00000
+        reg:  00000000.00000000.80000000.00000000.80000000.80000000
+        name:  'virtual-memory'
+
+    Node 0xffd3f1f0
+        context-table:  00000000.0f7ff000.00001000
+        psr-implementation:  00000000
+        psr-version:  00000004
+        implementation:  00000000
+        version:  00000004
+        cache-line-size:  00000020
+        cache-nlines:  00000200
+        page-size:  00001000
+        dcache-line-size:  00000010
+        dcache-nlines:  00000200
+        dcache-associativity:  00000001
+        icache-line-size:  00000020
+        icache-nlines:  00000200
+        icache-associativity:  00000001
+        ncaches:  00000002
+        mmu-nctx:  00000100
+        sparc-version:  00000008
+        mask_rev:  00000025
+        device_type:  'cpu'
+        name:  'FMI,MB86904'
+
