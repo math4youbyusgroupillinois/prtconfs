@@ -1,0 +1,1779 @@
+System Configuration:  Sun Microsystems  sun4
+Memory size: 16221 Megabytes
+System Peripherals (PROM Nodes):
+
+Node 0xf002a25c
+    .node:  f002a25c
+    banner-name: 'Sun Fire 880'
+    idprom:  01830003.ba0b3d0d.04302002.0b3d0d2d.00000000.00000000.00000000.00000000
+    scsi-initiator-id:  00000007
+    watchdog-enable:  
+    reset-reason: 'SPOR Software/User'
+    model: 'SUNW,501-4300'
+    stick-frequency:  00989680
+    clock-frequency:  08f0d180
+    breakpoint-trap:  0000007f
+    #size-cells:  00000002
+    name: 'SUNW,Sun-Fire-880'
+    device_type: 'gptwo'
+
+    Node 0xf002d444
+        .node:  f002d444
+        name: 'packages'
+
+        Node 0xf0052bec
+            .node:  f0052bec
+            name: 'SUNW,builtin-drivers'
+
+        Node 0xf0068134
+            .node:  f0068134
+            lba64:  
+            disk-write-fix:  
+            name: 'deblocker'
+
+        Node 0xf0068830
+            .node:  f0068830
+            name: 'disk-label'
+
+        Node 0xf006918c
+            .node:  f006918c
+            iso6429-1983-colors:  
+            name: 'terminal-emulator'
+
+        Node 0xf0070e1c
+            .node:  f0070e1c
+            name: 'SUNW,debug'
+
+        Node 0xf007114c
+            .node:  f007114c
+            source: '/flashprom:'
+            name: 'dropins'
+
+        Node 0xf00a77e8
+            .node:  f00a77e8
+            name: 'kbd-translator'
+
+        Node 0xf00a8afc
+            .node:  f00a8afc
+            name: 'obp-tftp'
+
+        Node 0xf00b7c60
+            .node:  f00b7c60
+            name: 'SUNW,i2c-ram-device'
+
+        Node 0xf00b84a4
+            .node:  f00b84a4
+            name: 'SUNW,fru-device'
+
+    Node 0xf002d4bc
+        .node:  f002d4bc
+        bootargs: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@4,0;4/vmlinuz-2.6.32-rc8-091201a console=ttyS2 root=/dev/sda1 initrd=/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@4,0;4/initrd.img-2.6.32-rc8-091201a init=/bin/bash'
+        bootpath: '/pci@8,700000/scsi@1/disk@0,0:a'
+        mmu:  fff74080
+        memory:  fff74290
+        stdout:  fff29b00
+        stdin:  fff29e60
+        stdout-#lines:  ffffffff
+        name: 'chosen'
+
+    Node 0xf002d530
+        .node:  f002d530
+        version: 'OBP 4.30.4 2009/08/19 07:21'
+        model: 'SUNW,4.30.4'
+        aligned-allocator:  
+        relative-addressing:  
+        name: 'openprom'
+
+        Node 0xf002d5c0
+            .node:  f002d5c0
+            name: 'client-services'
+
+    Node 0xf002d678
+        .node:  f002d678
+        test-args:  
+        diag-passes: '1'
+        keyboard-layout:  
+        local-mac-address?: 'true'
+        scsi-initiator-id: '7'
+        oem-logo:  
+        oem-logo?: 'false'
+        oem-banner:  
+        oem-banner?: 'false'
+        ansi-terminal?: 'true'
+        screen-#columns: '80'
+        screen-#rows: '24'
+        ttyb-rts-dtr-off: 'false'
+        ttyb-ignore-cd: 'true'
+        ttya-rts-dtr-off: 'false'
+        ttya-ignore-cd: 'true'
+        ttyb-mode: '9600,8,n,1,-'
+        ttya-mode: '9600,8,n,1,-'
+        output-device: 'screen'
+        input-device: 'keyboard'
+        auto-boot-on-error?: 'true'
+        load-base: '16384'
+        auto-boot?: 'false'
+        network-boot-arguments:  
+        boot-command: 'boot'
+        diag-file:  
+        diag-device: 'net'
+        boot-file:  
+        boot-device: 'disk-scsi'
+        use-nvramrc?: 'true'
+        nvramrc:  64657661.6c696173.20646973.6b2d7363.7369202f.70636940.382c3730.30303030.2f736373.6940312f.6469736b.40302c30.0a
+        security-mode: 'none'
+        security-password:  
+        security-#badlogins: '0'
+        verbosity: 'normal'
+        fcode-debug?: 'false'
+        diag-out-console: 'false'
+        diag-trigger: 'none'
+        service-mode?: 'false'
+        diag-script: 'normal'
+        diag-level: 'max'
+        diag-switch?: 'false'
+        error-reset-recovery: 'sync'
+        name: 'options'
+
+    Node 0xf002d6f0
+        .node:  f002d6f0
+        cdrom: '/pci@8,700000/scsi@1/disk@6,0:f'
+        tape: '/pci@8,700000/scsi@1/tape@4,0'
+        scsix: '/pci@8,700000/scsi@1'
+        disk-scsi: '/pci@8,700000/scsi@1/disk@0,0'
+        disk: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@0,0'
+        disk0: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@0,0'
+        disk1: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@1,0'
+        disk2: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@2,0'
+        disk3: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@3,0'
+        disk4: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@4,0'
+        disk5: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@5,0'
+        disk6: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@8,0'
+        disk7: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@9,0'
+        disk8: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@a,0'
+        disk9: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@b,0'
+        disk10: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@c,0'
+        disk11: '/pci@8,600000/SUNW,qlc@2/fp@0,0/disk@d,0'
+        scsi: '/pci@8,600000/SUNW,qlc@2'
+        net: '/pci@9,700000/network@1,1'
+        gem: '/pci@8,600000/network@1'
+        flash: '/pci@9,700000/ebus@1/flashprom@0,0'
+        idprom: '/pci@9,700000/ebus@1/i2c@1,500030/idprom@0,a0'
+        nvram: '/pci@9,700000/ebus@1/i2c@1,500030/nvram@0,a0'
+        i2c3: '/pci@9,700000/ebus@1/i2c@1,500030'
+        i2c2: '/pci@9,700000/ebus@1/i2c@1,50002e'
+        bbc1: '/pci@9,700000/ebus@1/bbc@1,500000'
+        i2c1: '/pci@9,700000/ebus@1/i2c@1,30'
+        i2c0: '/pci@9,700000/ebus@1/i2c@1,2e'
+        bbc0: '/pci@9,700000/ebus@1/bbc@1,0'
+        rsc-console: '/pci@9,700000/ebus@1/rsc-console@1,3083f8'
+        rsc-control: '/pci@9,700000/ebus@1/rsc-control@1,3062f8'
+        ttyb: '/pci@9,700000/ebus@1/serial@1,400000:b'
+        ttya: '/pci@9,700000/ebus@1/serial@1,400000:a'
+        pci9b: '/pci@9,700000'
+        pci9a: '/pci@9,600000'
+        pci8b: '/pci@8,700000'
+        pci8a: '/pci@8,600000'
+        ebus: '/pci@9,700000/ebus@1'
+        name: 'aliases'
+
+    Node 0xf00456b4
+        .node:  f00456b4
+        reg:  000000a0.00000000.00000001.00000000.000000b0.00000000.00000001.00000000.000000c0.00000000.00000001.00000000.000000d0.00000000.00000001.00000000
+        available:  000000d0.ffb00000.00000000.0000e000.000000d0.ffaf4000.00000000.00008000.000000d0.ffa14000.00000000.000de000.000000d0.ff000000.00000000.00a10000.000000d0.00000000.00000000.feffe000.000000c0.00000000.00000001.00000000.000000b0.00000000.00000001.00000000.000000a0.00000000.00000001.00000000
+        name: 'memory'
+
+    Node 0xf0045cc0
+        .node:  f0045cc0
+        translations:  00000000.00002000.00000000.003fe000.800000a0.00002036.00000000.00400000.00000000.00800000.800000d0.ff000036.00000000.40000000.00000000.00800000.800000d0.ff000036.00000000.f0000000.00000000.00400000.800000d0.ffc000b6.00000000.fed16000.00000000.00200000.800007fc.7d00008e.00000000.fef18000.00000000.00004000.800000d0.ffb280b6.00000000.fef1c000.00000000.00002000.80000400.04c0008e.00000000.fef1e000.00000000.00002000.80000400.04c1008e.00000000.fef20000.00000000.00010000.80000400.04e0008e.00000000.fef32000.00000000.00004000.800000d0.ffb2c0b6.00000000.fef36000.00000000.00002000.80000400.04c0008e.00000000.fef38000.00000000.00002000.80000400.04c1008e.00000000.fef3a000.00000000.00010000.80000400.04f0008e.00000000.fef4c000.00000000.00004000.800000d0.ffb300b6.00000000.fef50000.00000000.00010000.80000400.0460008e.00000000.fef60000.00000000.00010000.80000400.0470008e.00000000.fef70000.00000000.00090000.800000d0.ffb500b6.00000000.fff00000.00000000.00002000.80000400.0440008e.00000000.fff02000.00000000.00002000.80000400.0441008e.00000000.fff06000.00000000.00004000.800000d0.ffb340b6.00000000.fff0a000.00000000.00002000.80000400.0440008e.00000000.fff0c000.00000000.00002000.80000400.0441008e.00000000.fff16000.00000000.00002000.800000d0.ffb420b6.00000000.fff1a000.00000000.0000a000.800000d0.ffb0e0b6.00000000.fff26000.00000000.00002000.800007fc.7e40008e.00000000.fff28000.00000000.00004000.800000d0.ffa100b6.00000000.fff2c000.00000000.00002000.800007ff.e800008e.00000000.fff2e000.00000000.00002000.800007ff.ee00008e.00000000.fff30000.00000000.00004000.800000d0.ffb1e0b6.00000000.fff34000.00000000.00002000.800007fc.7e30008e.00000000.fff36000.00000000.00002000.800007fc.7e50008e.00000000.fff38000.00000000.00002000.800007fc.7e50008e.00000000.fff3a000.00000000.00002000.800007fc.7e50008e.00000000.fff3c000.00000000.00002000.800007fc.7e50008e.00000000.fff3e000.00000000.00002000.800000d0.ffb220b6.00000000.fff40000.00000000.00002000.800007fc.7e00008e.00000000.fff42000.00000000.00002000.800007fc.7e00008e.00000000.fff44000.00000000.00002000.800000d0.ffb380b6.00000000.fff46000.00000000.00002000.800007fc.7e00008e.00000000.fff48000.00000000.00002000.800007fc.7e30008e.00000000.fff4a000.00000000.00002000.800007ff.ec00008e.00000000.fff4c000.00000000.00002000.800007fc.7e30008e.00000000.fff4e000.00000000.00002000.800007fc.7e00008e.00000000.fff50000.00000000.00002000.800000d0.ffb3a0b6.00000000.fff52000.00000000.00002000.800007ff.ea00008e.00000000.fff54000.00000000.00002000.800000d0.ffb3c0b6.00000000.fff56000.00000000.00002000.800000d0.ffb240b6.00000000.fff5c000.00000000.00002000.800000d0.feffe0b6.00000000.fff5e000.00000000.0000a000.800000d0.ffb440b6.00000000.fff68000.00000000.00008000.800000d0.ffbe00b6.00000000.fff70000.00000000.00010000.800000d0.ffbf00b6
+        existing:  00000000.00000000.00000800.00000000.fffff800.00000000.00000800.00000000
+        available:  fffff800.00000000.000007fc.00000000.00000001.00000000.000007ff.00000000.00000000.ffff0000.00000000.0000e000.00000000.00000000.00000000.f0000000.00000000.fff24000.00000000.00002000.00000000.fff18000.00000000.00002000.00000000.fff0e000.00000000.00008000.00000000.fff04000.00000000.00002000.00000000.fef4a000.00000000.00002000.00000000.fef30000.00000000.00002000.00000000.fef16000.00000000.00002000.00000000.f0800000.00000000.0e516000
+        page-size:  00002000
+        name: 'virtual-memory'
+
+    Node 0xf0082030
+        .node:  f0082030
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000023
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000000
+        portid:  00000000
+        reg:  00000400.00000000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf0082774
+        .node:  f0082774
+        memory-layout:  4a323930.30000000.4a323930.31000000.4a333030.31000000.4a333030.30000000.4a333130.30000000.4a333130.31000000.4a333230.31000000.4a333230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000000
+        reg:  00000400.00400000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf00829c8
+        .node:  f00829c8
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000023
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000001
+        portid:  00000001
+        reg:  00000400.00800000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf0082cec
+        .node:  f0082cec
+        memory-layout:  4a323930.30000000.4a323930.31000000.4a333030.31000000.4a333030.30000000.4a333130.30000000.4a333130.31000000.4a333230.31000000.4a333230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000001
+        reg:  00000400.00c00000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf0082f40
+        .node:  f0082f40
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000023
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000002
+        portid:  00000002
+        reg:  00000400.01000000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf0083264
+        .node:  f0083264
+        memory-layout:  4a373930.30000000.4a373930.31000000.4a383030.31000000.4a383030.30000000.4a383130.30000000.4a383130.31000000.4a383230.31000000.4a383230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000002
+        reg:  00000400.01400000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf00834b8
+        .node:  f00834b8
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000023
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000003
+        portid:  00000003
+        reg:  00000400.01800000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf00837dc
+        .node:  f00837dc
+        memory-layout:  4a373930.30000000.4a373930.31000000.4a383030.31000000.4a383030.30000000.4a383130.30000000.4a383130.31000000.4a383230.31000000.4a383230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000003
+        reg:  00000400.01c00000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf0083a30
+        .node:  f0083a30
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000023
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000004
+        portid:  00000004
+        reg:  00000400.02000000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf0083d54
+        .node:  f0083d54
+        memory-layout:  4a323930.30000000.4a323930.31000000.4a333030.31000000.4a333030.30000000.4a333130.30000000.4a333130.31000000.4a333230.31000000.4a333230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000004
+        reg:  00000400.02400000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf0083fa8
+        .node:  f0083fa8
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000022
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000005
+        portid:  00000005
+        reg:  00000400.02800000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf00842cc
+        .node:  f00842cc
+        memory-layout:  4a323930.30000000.4a323930.31000000.4a333030.31000000.4a333030.30000000.4a333130.30000000.4a333130.31000000.4a333230.31000000.4a333230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000005
+        reg:  00000400.02c00000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf0084520
+        .node:  f0084520
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000023
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000006
+        portid:  00000006
+        reg:  00000400.03000000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf0084844
+        .node:  f0084844
+        memory-layout:  4a373930.30000000.4a373930.31000000.4a383030.31000000.4a383030.30000000.4a383130.30000000.4a383130.31000000.4a383230.31000000.4a383230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000006
+        reg:  00000400.03400000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf0084a98
+        .node:  f0084a98
+        clock-frequency:  35a4e900
+        manufacturer#:  0000003e
+        implementation#:  00000015
+        mask#:  00000022
+        sparc-version:  00000009
+        #dtlb-entries:  00000010
+        dcache-associativity:  00000004
+        dcache-line-size:  00000020
+        dcache-size:  00010000
+        #itlb-entries:  00000010
+        icache-associativity:  00000004
+        icache-line-size:  00000020
+        icache-size:  00008000
+        device_type: 'cpu'
+        cpuid:  00000007
+        portid:  00000007
+        reg:  00000400.03800000.00000000.00010000
+        ecache-associativity:  00000002
+        ecache-line-size:  00000200
+        ecache-size:  00800000
+        name: 'SUNW,UltraSPARC-III+'
+
+    Node 0xf0084dbc
+        .node:  f0084dbc
+        memory-layout:  4a373930.30000000.4a373930.31000000.4a383030.31000000.4a383030.30000000.4a383130.30000000.4a383130.31000000.4a383230.31000000.4a383230.30000000.01aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.55aaaaaa.aaaaaaaa.aaaaffff.ffffffff.ff555555.55555555.00000000.00000000.00ffd57f.5556ca6f.e3207607.997bbb25.7bca2a6a.564cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.854cc051.c560d465.d96ade5b.cf2a9e47.02760720.94168a1b.8f0c8011.854cc051.c560d465.d95bcfde.6fe39e47.bb029425.99168a1b.8f0c8011.854cc051.c560d465.d956ca5b.cf6ade6f.e32a9e47.bb027607.7b209425.99168a1b.8f0c8011.8557cb70.e4217708.9a7cbc26.7ccb2b6b.574dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.864dc152.c661d566.da6bdf5c.d02b9f48.03770821.95178b1c.900d8112.864dc152.c661d566.da5cd0df.70e49f48.bc039526.9a178b1c.900d8112.864dc152.c661d566.da57cb5c.d06bdf70.e42b9f48.bc037708.7c219526.9a178b1c.900d8112.8658cc71.e5227809.9b7dbd27.7dcc2c6c.584ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.874ec253.c762d667.db6ce05d.d12ca049.04780922.96188c1d.910e8213.874ec253.c762d667.db5dd1e0.71e5a049.bd049627.9b188c1d.910e8213.874ec253.c762d667.db58cc5d.d16ce071.e52ca049.bd047809.7d229627.9b188c1d.910e8213.8759cd72.e623790a.9c7ebe28.7ecd2d6d.594fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.884fc354.c863d768.dc6de15e.d22da14a.05790a23.97198d1e.920f8314.884fc354.c863d768.dc5ed2e1.72e6a14a.be059728.9c198d1e.920f8314.884fc354.c863d768.dc59cd5e.d26de172.e62da14a.be05790a.7e239728.9c198d1e.920f8314.88
+        compatible:  53554e57.2c556c74.72615350.4152432d.4949492c.6d630053.554e572c.6d6300
+        portid:  00000007
+        reg:  00000400.03c00000.00000000.00000048
+        device_type: 'memory-controller'
+        name: 'memory-controller'
+
+    Node 0xf0085010
+        .node:  f0085010
+        available:  81000000.00000000.00000400.00000000.0000fc00.82000000.00000000.00104000.00000000.7befc000
+        reg:  00000400.04700000.00000000.00018000.00000400.04410000.00000000.00000050.000007ff.ee000000.00000000.00000100
+        ranges:  00000000.00000000.00000000.000007ff.ee000000.00000000.01000000.01000000.00000000.00000000.000007ff.ef000000.00000000.01000000.02000000.00000000.00000000.000007fe.00000000.00000001.00000000.03000000.00000000.00000000.000007fe.00000000.00000001.00000000
+        ino-bitmap:  1ffff000.00280142
+        interrupt-map:  00000800.00000000.00000000.00000001.f0085010.0000001c.00001000.00000000.00000000.00000001.f0085010.0000000c.00001000.00000000.00000000.00000002.f0085010.0000000d.00001000.00000000.00000000.00000003.f0085010.0000000e.00001000.00000000.00000000.00000004.f0085010.0000000f.00001800.00000000.00000000.00000001.f0085010.00000010.00001800.00000000.00000000.00000002.f0085010.00000011.00001800.00000000.00000000.00000003.f0085010.00000012.00001800.00000000.00000000.00000004.f0085010.00000013.00002000.00000000.00000000.00000001.f0085010.00000014.00002000.00000000.00000000.00000002.f0085010.00000015.00002000.00000000.00000000.00000003.f0085010.00000016.00002000.00000000.00000000.00000004.f0085010.00000017.00002800.00000000.00000000.00000001.f0085010.00000018.00002800.00000000.00000000.00000002.f0085010.00000019.00002800.00000000.00000000.00000003.f0085010.0000001a.00002800.00000000.00000000.00000004.f0085010.0000001b
+        interrupt-map-mask:  00fff800.00000000.00000000.00000007
+        #interrupt-cells:  00000001
+        hotplug-capable:  
+        slot-names:  0000003c.50434920.33005043.49203200.50434920.31005043.49203000
+        interrupts:  00000033.00000030.00000031.00000034.00000035
+        clock-frequency:  01f78a40
+        bus-range:  00000000.00000000
+        bus-parity-generated:  
+        no-probe-list: '0'
+        compatible: 'pci108e,8001'
+        name: 'pci'
+        device_type: 'pci'
+        #address-cells:  00000003
+        #size-cells:  00000002
+        implementation#:  0000002a
+        version#:  00000004
+        portid:  00000008
+
+        Node 0xf00f02d0
+            .node:  f00f02d0
+            assigned-addresses:  81000810.00000000.00000300.00000000.00000100.82000814.00000000.00100000.00000000.00002000.82000818.00000000.00102000.00000000.00002000
+            device_type: 'scsi-2'
+            clock-frequency:  02625a00
+            reg:  00000800.00000000.00000000.00000000.00000000.01000810.00000000.00000000.00000000.00000100.02000814.00000000.00000000.00000000.00002000.02000818.00000000.00000000.00000000.00002000
+            name: 'scsi'
+            compatible:  70636931.3030302c.662e3400.70636931.3030302c.66007063.69636c61.73732c30.31303030.30007063.69636c61.73732c30.31303000
+            devsel-speed:  00000001
+            latency-timer:  00000040
+            max-latency:  00000040
+            min-grant:  00000011
+            interrupts:  00000001
+            cache-line-size:  00000010
+            class-code:  00010000
+            revision-id:  00000004
+            device-id:  0000000f
+            vendor-id:  00001000
+
+            Node 0xf00f4cec
+                .node:  f00f4cec
+                lba64:  
+                device_type: 'block'
+                compatible: 'sd'
+                name: 'disk'
+
+            Node 0xf00f5c1c
+                .node:  f00f5c1c
+                device_type: 'byte'
+                compatible: 'st'
+                name: 'tape'
+
+    Node 0xf008ecc0
+        .node:  f008ecc0
+        available:  81000000.00000000.00000400.00000000.0000fc00.82000000.00000000.00402000.00000000.0001e000.82000000.00000000.00440000.00000000.7ebc0000
+        ino-bitmap:  0000001f.00570081
+        interrupt-map:  00000800.00000000.00000000.00000001.f008ecc0.00000000.00001000.00000000.00000000.00000001.f008ecc0.00000004
+        interrupt-map-mask:  00fff800.00000000.00000000.00000007
+        #interrupt-cells:  00000001
+        reg:  00000400.04600000.00000000.00018000.00000400.04410000.00000000.00000050.000007ff.ec000000.00000000.00000100
+        ranges:  00000000.00000000.00000000.000007ff.ec000000.00000000.01000000.01000000.00000000.00000000.000007ff.ed000000.00000000.01000000.02000000.00000000.00000000.000007fd.00000000.00000001.00000000.03000000.00000000.00000000.000007fd.00000000.00000001.00000000
+        66mhz-capable:  
+        interrupts:  00000032.00000030.00000031.00000034.00000036
+        clock-frequency:  03ef1480
+        bus-range:  00000000.00000000
+        bus-parity-generated:  
+        no-probe-list: '0'
+        compatible: 'pci108e,8001'
+        name: 'pci'
+        device_type: 'pci'
+        #address-cells:  00000003
+        #size-cells:  00000002
+        implementation#:  0000002a
+        version#:  00000004
+        portid:  00000008
+
+        Node 0xf00e2edc
+            .node:  f00e2edc
+            assigned-addresses:  82000810.00000000.00200000.00000000.00200000.82000830.00000000.00100000.00000000.00100000
+            shared-pins: 'serdes'
+            board-rev:  00000006
+            model: 'SUNW,pci-gem'
+            has-fcode: ' '
+            version: '1.12 '
+            compatible:  70636931.3038652c.32626164.2e310070.63693130.38652c32.62616400.70636963.6c617373.2c303230.30303000.70636963.6c617373.2c303230.3000
+            device_type: 'network'
+            address-bits:  00000030
+            max-frame-size:  00004000
+            reg:  00000800.00000000.00000000.00000000.00000000.02000810.00000000.00000000.00000000.00009060
+            gem-rev:  00000001
+            name: 'network'
+            local-mac-address:  0003ba0b.3d0e
+            66mhz-capable:  
+            fast-back-to-back:  
+            devsel-speed:  00000002
+            latency-timer:  00000040
+            max-latency:  00000040
+            min-grant:  00000040
+            interrupts:  00000001
+            cache-line-size:  00000010
+            class-code:  00020000
+            revision-id:  00000001
+            device-id:  00002bad
+            vendor-id:  0000108e
+
+        Node 0xf00e9b74
+            .node:  f00e9b74
+            assigned-addresses:  81001010.00000000.00000300.00000000.00000100.82001014.00000000.00400000.00000000.00002000.82001030.00000000.00420000.00000000.00020000
+            port-wwn:  21000003.ba0b3d0d
+            node-wwn:  20000003.ba0b3d0d
+            reg:  00001000.00000000.00000000.00000000.00000000.01001010.00000000.00000000.00000000.00000100.02001014.00000000.00000000.00000000.00001000
+            compatible:  70636931.3037372c.32323030.2e350070.63693130.37372c32.32303000.70636963.6c617373.2c303130.30303000.70636963.6c617373.2c303130.3000
+            manufacturer: 'QLGC'
+            #size-cells:  00000000
+            #address-cells:  00000002
+            device_type: 'scsi-fcp'
+            name: 'SUNW,qlc'
+            version: 'ISP2200 FC-AL Host Adapter Driver: 1.15 04/03/22'
+            66mhz-capable:  
+            fast-back-to-back:  
+            devsel-speed:  00000001
+            latency-timer:  00000040
+            max-latency:  00000000
+            min-grant:  00000040
+            interrupts:  00000001
+            cache-line-size:  00000010
+            class-code:  00010000
+            revision-id:  00000005
+            device-id:  00002200
+            vendor-id:  00001077
+
+            Node 0xf00eea50
+                .node:  f00eea50
+                #size-cells:  00000000
+                #address-cells:  00000004
+                reg:  00000000.00000000
+                device_type: 'fp'
+                name: 'fp'
+
+                Node 0xf00ef14c
+                    .node:  f00ef14c
+                    lba64:  
+                    device_type: 'block'
+                    compatible: 'ssd'
+                    name: 'disk'
+
+    Node 0xf00969d4
+        .node:  f00969d4
+        available:  81000000.00000000.00000300.00000000.0000fd00.82000000.00000000.00124000.00000000.002dc000.82000000.00000000.02300000.00000000.79d00000
+        reg:  00000400.04f00000.00000000.00018000.00000400.04c10000.00000000.00000050.000007ff.ea000000.00000000.00000100
+        ranges:  00000000.00000000.00000000.000007ff.ea000000.00000000.01000000.01000000.00000000.00000000.000007ff.eb000000.00000000.01000000.02000000.00000000.00000000.000007fc.00000000.00000001.00000000.03000000.00000000.00000000.000007fc.00000000.00000001.00000000
+        ino-bitmap:  f0fff000.0028617f
+        interrupt-map:  00000800.00000000.00000000.00000002.f00969d4.0000001d.00000800.00000000.00000000.00000003.f00969d4.0000001e.00000800.00000000.00000000.00000004.f00969d4.0000001f.00001000.00000000.00000000.00000001.f00969d4.0000000c.00001000.00000000.00000000.00000002.f00969d4.0000000d.00001000.00000000.00000000.00000003.f00969d4.0000000e.00001000.00000000.00000000.00000004.f00969d4.0000000f.00001800.00000000.00000000.00000001.f00969d4.00000010.00001800.00000000.00000000.00000002.f00969d4.00000011.00001800.00000000.00000000.00000003.f00969d4.00000012.00001800.00000000.00000000.00000004.f00969d4.00000013.00002000.00000000.00000000.00000001.f00969d4.00000014.00002000.00000000.00000000.00000002.f00969d4.00000015.00002000.00000000.00000000.00000003.f00969d4.00000016.00002000.00000000.00000000.00000004.f00969d4.00000017
+        interrupt-map-mask:  00fff800.00000000.00000000.00000007
+        #interrupt-cells:  00000001
+        hotplug-capable:  
+        slot-names:  0000001c.50434920.36005043.49203500.50434920.3400
+        interrupts:  00000033.00000030.00000031.00000034.00000035
+        clock-frequency:  01f78a40
+        bus-range:  00000000.00000001
+        bus-parity-generated:  
+        no-probe-list: '0'
+        compatible: 'pci108e,8001'
+        name: 'pci'
+        device_type: 'pci'
+        #address-cells:  00000003
+        #size-cells:  00000002
+        implementation#:  0000002a
+        version#:  00000004
+        portid:  00000009
+
+        Node 0xf00b8cac
+            .node:  f00b8cac
+            interrupt-map:  00000001.0000002e.00000001.f00969d4.00000023.00000001.00000030.00000001.f00969d4.00000023.00000001.0050002e.00000001.f00969d4.00000028.00000001.00500030.00000001.f00969d4.00000028.00000001.00300070.00000001.f00969d4.00000024.00000001.003062f8.00000001.f00969d4.0000002e.00000001.003083f8.00000001.f00969d4.0000002d.00000001.00400000.00000001.f00969d4.00000022
+            interrupt-map-mask:  0000001f.00ffffff.00000003
+            #interrupt-cells:  00000001
+            ranges:  00000000.00000000.82000810.00000000.7d000000.01000000.00000001.00000000.82000814.00000000.7e000000.00800000
+            reg:  00000800.00000000.00000000.00000000.00000000.02000810.00000000.00000000.00000000.01000000.02000814.00000000.00000000.00000000.00800000
+            #size-cells:  00000001
+            #address-cells:  00000002
+            name: 'ebus'
+            max-latency:  00000019
+            min-grant:  0000000a
+            class-code:  00068000
+            revision-id:  00000001
+            devsel-speed:  00000001
+            fast-back-to-back:  
+            device-id:  00001100
+            vendor-id:  0000108e
+
+            Node 0xf00ba3e8
+                .node:  f00ba3e8
+                model: 'SUNW,525-1793'
+                version:  4f425020.342e3330.2e342032.3030392f.30382f31.39203037.3a323100.504f5354.20342e33.302e3420.32303039.2f30382f.31392030.373a3239.004f4244.49414720.342e3330.2e342032.3030392f.30382f31.39203037.3a323820.2000
+                name: 'flashprom'
+                reg:  00000000.00000000.00200000
+
+            Node 0xf00bb0f0
+                .node:  f00bb0f0
+                reg:  00000001.00000000.00100000
+                name: 'bbc'
+
+            Node 0xf00bb188
+                .node:  f00bb188
+                reg:  00000001.0030002e.00000002.00000001.00300600.00000008
+                compatible:  53554e57.2c626263.2d706f77.65720065.6275732d.706f7765.7200
+                name: 'power'
+
+            Node 0xf00bb3d8
+                .node:  f00bb3d8
+                interrupts:  00000001
+                reg:  00000001.0000002e.00000002.00000001.0000002d.00000001
+                #interrupt-cells:  00000001
+                interrupt-map-mask:  0000001f.000fffff.00000003
+                compatible: 'SUNW,bbc-i2c'
+                #size-cells:  00000000
+                #address-cells:  00000002
+                name: 'i2c'
+
+                Node 0xf00be12c
+                    .node:  f00be12c
+                    reg:  00000000.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00be3d0
+                    .node:  f00be3d0
+                    reg:  00000000.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00be674
+                    .node:  f00be674
+                    reg:  00000000.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00be918
+                    .node:  f00be918
+                    reg:  00000000.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bebbc
+                    .node:  f00bebbc
+                    reg:  00000000.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bee60
+                    .node:  f00bee60
+                    reg:  00000000.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bf104
+                    .node:  f00bf104
+                    reg:  00000000.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bf3a8
+                    .node:  f00bf3a8
+                    reg:  00000000.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bf64c
+                    .node:  f00bf64c
+                    reg:  00000001.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bf8f0
+                    .node:  f00bf8f0
+                    reg:  00000001.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bfb94
+                    .node:  f00bfb94
+                    reg:  00000001.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00bfe38
+                    .node:  f00bfe38
+                    reg:  00000001.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c00dc
+                    .node:  f00c00dc
+                    reg:  00000001.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c0380
+                    .node:  f00c0380
+                    reg:  00000001.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c0624
+                    .node:  f00c0624
+                    reg:  00000001.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c08c8
+                    .node:  f00c08c8
+                    reg:  00000001.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c0b6c
+                    .node:  f00c0b6c
+                    reg:  00000002.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c0e10
+                    .node:  f00c0e10
+                    reg:  00000002.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c10b4
+                    .node:  f00c10b4
+                    reg:  00000002.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c1358
+                    .node:  f00c1358
+                    reg:  00000002.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c15fc
+                    .node:  f00c15fc
+                    reg:  00000002.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c18a0
+                    .node:  f00c18a0
+                    reg:  00000002.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c1b44
+                    .node:  f00c1b44
+                    reg:  00000002.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c1de8
+                    .node:  f00c1de8
+                    reg:  00000002.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c208c
+                    .node:  f00c208c
+                    reg:  00000003.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c2330
+                    .node:  f00c2330
+                    reg:  00000003.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c25d4
+                    .node:  f00c25d4
+                    reg:  00000003.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c2878
+                    .node:  f00c2878
+                    reg:  00000003.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c2b1c
+                    .node:  f00c2b1c
+                    reg:  00000003.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c2dc0
+                    .node:  f00c2dc0
+                    reg:  00000003.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c3064
+                    .node:  f00c3064
+                    reg:  00000003.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c3308
+                    .node:  f00c3308
+                    reg:  00000003.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c35ac
+                    .node:  f00c35ac
+                    reg:  00000004.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c3850
+                    .node:  f00c3850
+                    reg:  00000004.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c3af4
+                    .node:  f00c3af4
+                    reg:  00000004.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c3d98
+                    .node:  f00c3d98
+                    reg:  00000004.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00c403c
+                    .node:  f00c403c
+                    reg:  00000004.00000030
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c4214
+                    .node:  f00c4214
+                    reg:  00000004.00000032
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c43ec
+                    .node:  f00c43ec
+                    reg:  00000004.00000034
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c45c4
+                    .node:  f00c45c4
+                    reg:  00000004.00000052
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c479c
+                    .node:  f00c479c
+                    reg:  00000004.00000054
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c4974
+                    .node:  f00c4974
+                    reg:  00000004.00000056
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c4b4c
+                    .node:  f00c4b4c
+                    reg:  00000004.00000098
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+            Node 0xf00c4d90
+                .node:  f00c4d90
+                interrupt-map:  00000000.000000e2.00000001.f00b8cac.00000027.00000000.000000e6.00000001.f00b8cac.00000027.00000000.000000e8.00000001.f00b8cac.00000027.00000000.000000ec.00000001.f00b8cac.00000026
+                interrupts:  00000001
+                reg:  00000001.00000030.00000002
+                #interrupt-cells:  00000001
+                interrupt-map-mask:  0000001f.000fffff.00000003
+                compatible: 'SUNW,bbc-i2c'
+                #size-cells:  00000000
+                #address-cells:  00000002
+                name: 'i2c'
+
+                Node 0xf00c7b4c
+                    .node:  f00c7b4c
+                    reg:  00000000.00000016
+                    compatible: 'i2c-ssc100'
+                    name: 'controller'
+
+                Node 0xf00c7c10
+                    .node:  f00c7c10
+                    reg:  00000000.00000018
+                    compatible: 'i2c-smbus-ara'
+                    name: 'smbus-ara'
+
+                Node 0xf00c7cd8
+                    .node:  f00c7cd8
+                    reg:  00000000.0000001a
+                    compatible: 'i2c-ssc100'
+                    name: 'controller'
+
+                Node 0xf00c7d9c
+                    .node:  f00c7d9c
+                    reg:  00000000.0000001c
+                    compatible: 'i2c-ssc100'
+                    name: 'controller'
+
+                Node 0xf00c7e60
+                    .node:  f00c7e60
+                    reg:  00000000.0000001e
+                    compatible: 'i2c-ssc100'
+                    name: 'controller'
+
+                Node 0xf00c7f24
+                    .node:  f00c7f24
+                    reg:  00000000.00000030
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c80fc
+                    .node:  f00c80fc
+                    reg:  00000000.00000032
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c82d4
+                    .node:  f00c82d4
+                    reg:  00000000.00000034
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c84ac
+                    .node:  f00c84ac
+                    reg:  00000000.00000046
+                    compatible: 'i2c-pcf8574'
+                    name: 'ioexp'
+
+                Node 0xf00c8660
+                    .node:  f00c8660
+                    reg:  00000000.00000052
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c8838
+                    .node:  f00c8838
+                    reg:  00000000.00000054
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c8a10
+                    .node:  f00c8a10
+                    reg:  00000000.00000056
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00c8be8
+                    .node:  f00c8be8
+                    reg:  00000000.00000058
+                    compatible: 'i2c-x9241'
+                    name: 'controller'
+
+                Node 0xf00c8cac
+                    .node:  f00c8cac
+                    reg:  00000000.0000005a
+                    compatible: 'i2c-ltc1427'
+                    name: 'adio'
+
+                Node 0xf00c8d6c
+                    .node:  f00c8d6c
+                    reg:  00000000.0000005c
+                    compatible: 'i2c-x9241'
+                    name: 'controller'
+
+                Node 0xf00c8e30
+                    .node:  f00c8e30
+                    reg:  00000000.0000005e
+                    compatible: 'i2c-ltc1427'
+                    name: 'adio'
+
+                Node 0xf00c8ef0
+                    .node:  f00c8ef0
+                    reg:  00000000.00000070
+                    compatible: 'i2c-pcf8574'
+                    name: 'ioexp'
+
+                Node 0xf00c90a4
+                    .node:  f00c90a4
+                    reg:  00000000.00000072
+                    compatible: 'i2c-pcf8574'
+                    name: 'ioexp'
+
+                Node 0xf00c9258
+                    .node:  f00c9258
+                    reg:  00000000.00000074
+                    compatible: 'i2c-pcf8574'
+                    name: 'ioexp'
+
+                Node 0xf00c940c
+                    .node:  f00c940c
+                    reg:  00000000.00000080
+                    compatible: 'i2c-ssc050'
+                    name: 'ioexp'
+
+                Node 0xf00c95dc
+                    .node:  f00c95dc
+                    reg:  00000000.00000082
+                    compatible: 'i2c-ssc050'
+                    name: 'ioexp'
+
+                Node 0xf00c97ac
+                    .node:  f00c97ac
+                    reg:  00000000.00000088
+                    compatible: 'i2c-ssc050'
+                    name: 'ioexp'
+
+                Node 0xf00c997c
+                    .node:  f00c997c
+                    reg:  00000000.0000008a
+                    compatible: 'i2c-ssc050'
+                    name: 'ioexp'
+
+                Node 0xf00c9b4c
+                    .node:  f00c9b4c
+                    reg:  00000000.0000008c
+                    compatible: 'i2c-ssc050'
+                    name: 'ioexp'
+
+                Node 0xf00c9d1c
+                    .node:  f00c9d1c
+                    reg:  00000000.0000008e
+                    compatible: 'i2c-ssc050'
+                    name: 'ioexp'
+
+                Node 0xf00c9eec
+                    .node:  f00c9eec
+                    reg:  00000000.00000090
+                    compatible: 'i2c-pcf8591'
+                    name: 'adio'
+
+                Node 0xf00ca0a0
+                    .node:  f00ca0a0
+                    reg:  00000000.00000092
+                    compatible: 'i2c-pcf8591'
+                    name: 'adio'
+
+                Node 0xf00ca254
+                    .node:  f00ca254
+                    reg:  00000000.00000094
+                    compatible: 'i2c-pcf8591'
+                    name: 'adio'
+
+                Node 0xf00ca408
+                    .node:  f00ca408
+                    reg:  00000000.00000096
+                    compatible: 'i2c-pcf8591'
+                    name: 'adio'
+
+                Node 0xf00ca5bc
+                    .node:  f00ca5bc
+                    reg:  00000000.00000098
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00ca794
+                    .node:  f00ca794
+                    reg:  00000000.0000009a
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00ca96c
+                    .node:  f00ca96c
+                    reg:  00000000.0000009c
+                    compatible: 'i2c-lm75'
+                    name: 'temperature-sensor'
+
+                Node 0xf00cab28
+                    .node:  f00cab28
+                    reg:  00000000.0000009e
+                    compatible: 'i2c-lm75'
+                    name: 'temperature-sensor'
+
+                Node 0xf00cace4
+                    .node:  f00cace4
+                    reg:  00000000.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00caf88
+                    .node:  f00caf88
+                    reg:  00000000.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00cb22c
+                    .node:  f00cb22c
+                    reg:  00000000.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00cb4d0
+                    .node:  f00cb4d0
+                    reg:  00000000.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00cb774
+                    .node:  f00cb774
+                    reg:  00000000.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00cba18
+                    .node:  f00cba18
+                    reg:  00000000.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00cbcbc
+                    .node:  f00cbcbc
+                    reg:  00000000.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00cbf60
+                    .node:  f00cbf60
+                    reg:  00000000.000000d0
+                    compatible: 'i2c-ds1307'
+                    name: 'rscrtc'
+
+                Node 0xf00cc020
+                    .node:  f00cc020
+                    interrupts:  00000001
+                    slot-table:  2f706369.40392c36.30303030.30003100.32002f70.63694039.2c363030.30303000.30003100
+                    reg:  00000000.000000e2
+                    compatible: 'i2c-hpc3130'
+                    name: 'hotplug-controller'
+
+                Node 0xf00cc59c
+                    .node:  f00cc59c
+                    interrupts:  00000001
+                    slot-table:  2f706369.40382c37.30303030.30003300.35002f70.63694038.2c373030.30303000.32003400.2f706369.40382c37.30303030.30003100.33002f70.63694038.2c373030.30303000.30003200
+                    reg:  00000000.000000e6
+                    compatible: 'i2c-hpc3130'
+                    name: 'hotplug-controller'
+
+                Node 0xf00ccb3c
+                    .node:  f00ccb3c
+                    interrupts:  00000001
+                    slot-table:  2f706369.40392c37.30303030.30003200.34002f70.63694039.2c373030.30303000.31003300.2f706369.40392c37.30303030.30003000.3200
+                    reg:  00000000.000000e8
+                    compatible: 'i2c-hpc3130'
+                    name: 'hotplug-controller'
+
+                Node 0xf00cd0cc
+                    .node:  f00cd0cc
+                    interrupts:  00000001
+                    slot-table:  2f707365.75646f2f.67707477.6f403000.30003000.2f707365.75646f2f.67707477.6f403000.31003100.2f707365.75646f2f.67707477.6f403000.32003200.2f707365.75646f2f.67707477.6f403000.33003300
+                    reg:  00000000.000000ec
+                    compatible: 'i2c-hpc3130'
+                    name: 'hotplug-controller'
+
+            Node 0xf00cd6e0
+                .node:  f00cd6e0
+                reg:  00000001.00500000.00100000
+                name: 'bbc'
+
+            Node 0xf00cd778
+                .node:  f00cd778
+                interrupts:  00000001
+                reg:  00000001.0050002e.00000002.00000001.0050002d.00000001
+                #interrupt-cells:  00000001
+                interrupt-map-mask:  0000001f.000fffff.00000003
+                compatible: 'SUNW,bbc-i2c'
+                #size-cells:  00000000
+                #address-cells:  00000002
+                name: 'i2c'
+
+                Node 0xf00d04cc
+                    .node:  f00d04cc
+                    reg:  00000000.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d0770
+                    .node:  f00d0770
+                    reg:  00000000.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d0a14
+                    .node:  f00d0a14
+                    reg:  00000000.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d0cb8
+                    .node:  f00d0cb8
+                    reg:  00000000.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d0f5c
+                    .node:  f00d0f5c
+                    reg:  00000000.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d1200
+                    .node:  f00d1200
+                    reg:  00000000.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d14a4
+                    .node:  f00d14a4
+                    reg:  00000000.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d1748
+                    .node:  f00d1748
+                    reg:  00000000.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d19ec
+                    .node:  f00d19ec
+                    reg:  00000001.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d1c90
+                    .node:  f00d1c90
+                    reg:  00000001.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d1f34
+                    .node:  f00d1f34
+                    reg:  00000001.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d21d8
+                    .node:  f00d21d8
+                    reg:  00000001.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d247c
+                    .node:  f00d247c
+                    reg:  00000001.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d2720
+                    .node:  f00d2720
+                    reg:  00000001.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d29c4
+                    .node:  f00d29c4
+                    reg:  00000001.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d2c68
+                    .node:  f00d2c68
+                    reg:  00000001.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d2f0c
+                    .node:  f00d2f0c
+                    reg:  00000002.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d31b0
+                    .node:  f00d31b0
+                    reg:  00000002.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d3454
+                    .node:  f00d3454
+                    reg:  00000002.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d36f8
+                    .node:  f00d36f8
+                    reg:  00000002.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d399c
+                    .node:  f00d399c
+                    reg:  00000002.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d3c40
+                    .node:  f00d3c40
+                    reg:  00000002.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d3ee4
+                    .node:  f00d3ee4
+                    reg:  00000002.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d4188
+                    .node:  f00d4188
+                    reg:  00000002.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d442c
+                    .node:  f00d442c
+                    reg:  00000003.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d46d0
+                    .node:  f00d46d0
+                    reg:  00000003.000000a2
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d4974
+                    .node:  f00d4974
+                    reg:  00000003.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d4c18
+                    .node:  f00d4c18
+                    reg:  00000003.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d4ebc
+                    .node:  f00d4ebc
+                    reg:  00000003.000000a8
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d5160
+                    .node:  f00d5160
+                    reg:  00000003.000000aa
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d5404
+                    .node:  f00d5404
+                    reg:  00000003.000000ac
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d56a8
+                    .node:  f00d56a8
+                    reg:  00000003.000000ae
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d594c
+                    .node:  f00d594c
+                    reg:  00000004.000000a4
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d5bf0
+                    .node:  f00d5bf0
+                    reg:  00000004.000000a6
+                    compatible: 'i2c-at24c64'
+                    device_type: 'fru-prom'
+                    name: 'fru'
+
+                Node 0xf00d5e94
+                    .node:  f00d5e94
+                    reg:  00000004.00000052
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00d606c
+                    .node:  f00d606c
+                    reg:  00000004.00000054
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+                Node 0xf00d6244
+                    .node:  f00d6244
+                    reg:  00000004.00000056
+                    compatible: 'i2c-max1617'
+                    name: 'temperature'
+
+            Node 0xf00d6488
+                .node:  f00d6488
+                interrupts:  00000001
+                reg:  00000001.00500030.00000002
+                #interrupt-cells:  00000001
+                interrupt-map-mask:  0000001f.000fffff.00000003
+                compatible: 'SUNW,bbc-i2c'
+                #size-cells:  00000000
+                #address-cells:  00000002
+                name: 'i2c'
+
+                Node 0xf00d91d0
+                    .node:  f00d91d0
+                    reg:  00000000.000000a0
+                    compatible: 'i2c-at24c64'
+                    device_type: 'nvram'
+                    name: 'nvram'
+
+                Node 0xf00d95a4
+                    .node:  f00d95a4
+                    device_type: 'idprom'
+                    reg:  00000000.000000a0
+                    name: 'idprom'
+
+            Node 0xf00d98a4
+                .node:  f00d98a4
+                address:  fff48070
+                reg:  00000001.00300070.00000002
+                compatible: 'ds1287'
+                model: 'ds1287'
+                name: 'rtc'
+                interrupts:  00000001
+
+            Node 0xf00da144
+                .node:  f00da144
+                reg:  00000001.00300600.00000008
+                compatible: 'ns87317-gpio'
+                name: 'gpio'
+
+            Node 0xf00da41c
+                .node:  f00da41c
+                address:  fff34700
+                reg:  00000001.00300700.00000002
+                compatible: 'ns87317-pmc'
+                name: 'pmc'
+
+            Node 0xf00da5d0
+                .node:  f00da5d0
+                port-a-ignore-cd:  
+                reg:  00000001.003062f8.00000008
+                device_type: 'serial'
+                compatible:  7273632d.636f6e74.726f6c00.73753136.35353000.737500
+                interrupts:  00000001
+                name: 'rsc-control'
+
+            Node 0xf00dbed0
+                .node:  f00dbed0
+                port-a-ignore-cd:  
+                reg:  00000001.003083f8.00000008
+                device_type: 'serial'
+                compatible:  7273632d.636f6e73.6f6c6500.73753136.35353000.737500
+                interrupts:  00000001
+                name: 'rsc-console'
+
+            Node 0xf00dd7d0
+                .node:  f00dd7d0
+                port-b-ignore-cd:  
+                port-a-ignore-cd:  
+                reg:  00000001.00400000.00000080
+                compatible:  73616238.32353332.00736500
+                device_type: 'serial'
+                name: 'serial'
+                interrupts:  00000001
+
+        Node 0xf00f95bc
+            .node:  f00f95bc
+            assigned-addresses:  82000910.00000000.00100000.00000000.00020000.82000930.00000000.00400000.00000000.00400000
+            shared-pins: 'mii'
+            interrupts:  00000002
+            model: 'SUNW,pci-eri'
+            version: '1.11'
+            compatible:  70636931.3038652c.31313031.2e310070.63693130.38652c31.31303100.70636963.6c617373.2c303230.30303000.70636963.6c617373.2c303230.3000
+            device_type: 'network'
+            address-bits:  00000030
+            max-frame-size:  00004000
+            reg:  00000900.00000000.00000000.00000000.00000000.02000910.00000000.00000000.00000000.00008000
+            name: 'network'
+            local-mac-address:  0003ba0b.3d0d
+            fast-back-to-back:  
+            devsel-speed:  00000001
+            latency-timer:  00000040
+            max-latency:  00000005
+            min-grant:  0000000a
+            cache-line-size:  00000010
+            class-code:  00020000
+            revision-id:  00000001
+            device-id:  00001101
+            vendor-id:  0000108e
+
+        Node 0xf0101c10
+            .node:  f0101c10
+            assigned-addresses:  82000b10.00000000.01000000.00000000.01000000.82000b30.00000000.00c00000.00000000.00400000
+            sunw,find-fcode:  f0107364
+            maximum-frame#:  0000ffff
+            reg:  00000b00.00000000.00000000.00000000.00000000.02000b10.00000000.00000000.00000000.01000000
+            #size-cells:  00000000
+            #address-cells:  00000001
+            compatible:  70636931.3038652c.31313033.2e310070.63693130.38652c31.31303300.70636963.6c617373.2c306330.33313000.70636963.6c617373.2c306330.3300
+            name: 'usb'
+            interrupts:  00000004
+            fast-back-to-back:  
+            devsel-speed:  00000001
+            latency-timer:  00000040
+            max-latency:  00000005
+            min-grant:  0000000a
+            cache-line-size:  00000010
+            class-code:  000c0310
+            revision-id:  00000001
+            device-id:  00001103
+            vendor-id:  0000108e
+
+        Node 0xf0108214
+            .node:  f0108214
+            ranges:  82000000.00000000.02000000.82000000.00000000.02000000.00000000.00300000
+            bus-range:  00000001.00000001
+            compatible:  70636938.3038362c.62313534.2e300070.63693830.38362c62.31353400.70636963.6c617373.2c303630.34303000.70636963.6c617373.2c303630.3400
+            reg:  00001000.00000000.00000000.00000000.00000000
+            #address-cells:  00000003
+            #size-cells:  00000002
+            device_type: 'pci'
+            name: 'pci'
+            66mhz-capable:  
+            fast-back-to-back:  
+            devsel-speed:  00000001
+            latency-timer:  00000040
+            cache-line-size:  00000010
+            class-code:  00060400
+            revision-id:  00000000
+            device-id:  0000b154
+            vendor-id:  00008086
+
+            Node 0xf010a644
+                .node:  f010a644
+                assigned-addresses:  82010010.00000000.02000000.00000000.00200000.82010030.00000000.02200000.00000000.00100000
+                local-mac-address:  0003ba03.3787
+                phy-type: 'mif'
+                max-frame-size:  00004000
+                address-bits:  00000030
+                compatible:  70636931.3038652c.61626261.00706369.636c6173.732c3032.30303030.00
+                board-model: '501-5902'
+                model: 'SUNW,pci-ce'
+                device_type: 'network'
+                reg:  00010000.00000000.00000000.00000000.00000000.02010010.00000000.00000000.00000000.00200000.02010030.00000000.00000000.00000000.00100000
+                name: 'network'
+                version: '1.12'
+                fcode-rom-offset:  00000000
+                66mhz-capable:  
+                fast-back-to-back:  
+                devsel-speed:  00000002
+                latency-timer:  00000040
+                max-latency:  00000040
+                min-grant:  00000040
+                interrupts:  00000001
+                cache-line-size:  00000010
+                class-code:  00020000
+                revision-id:  00000001
+                device-id:  0000abba
+                vendor-id:  0000108e
+
+    Node 0xf00a0230
+        .node:  f00a0230
+        available:  81000000.00000000.00000300.00000000.0000fd00.82000000.00000000.10000000.00000000.6f000000
+        ino-bitmap:  0000001f.00570080
+        interrupt-map:  00000800.00000000.00000000.00000001.f00a0230.00000000.00000800.00000000.00000000.00000002.f00a0230.00000001.00000800.00000000.00000000.00000003.f00a0230.00000002.00000800.00000000.00000000.00000004.f00a0230.00000003.00001000.00000000.00000000.00000001.f00a0230.00000004.00001000.00000000.00000000.00000002.f00a0230.00000005.00001000.00000000.00000000.00000003.f00a0230.00000006.00001000.00000000.00000000.00000004.f00a0230.00000007
+        interrupt-map-mask:  00fff800.00000000.00000000.00000007
+        #interrupt-cells:  00000001
+        reg:  00000400.04e00000.00000000.00018000.00000400.04c10000.00000000.00000050.000007ff.e8000000.00000000.00000100
+        ranges:  00000000.00000000.00000000.000007ff.e8000000.00000000.01000000.01000000.00000000.00000000.000007ff.e9000000.00000000.01000000.02000000.00000000.00000000.000007fb.00000000.00000001.00000000.03000000.00000000.00000000.000007fb.00000000.00000001.00000000
+        hotplug-capable:  
+        66mhz-capable:  
+        slot-names:  00000006.50434920.38005043.49203700
+        interrupts:  00000032.00000030.00000031.00000034.00000036
+        clock-frequency:  03ef1480
+        bus-range:  00000000.00000001
+        bus-parity-generated:  
+        no-probe-list: '0'
+        compatible: 'pci108e,8001'
+        name: 'pci'
+        device_type: 'pci'
+        #address-cells:  00000003
+        #size-cells:  00000002
+        implementation#:  0000002a
+        version#:  00000004
+        portid:  00000009
+
+        Node 0xf00f6ae8
+            .node:  f00f6ae8
+            available:  82000000.00000000.00200000.00000000.00600000.82000000.00000000.01000000.00000000.07000000
+            ranges:  82000000.00000000.00100000.82000000.00000000.00100000.00000000.0ff00000
+            bus-range:  00000001.00000001
+            compatible:  70636931.3562332c.35613436.2e613100.70636931.3562332c.35613436.00706369.636c6173.732c3036.30343030.00706369.636c6173.732c3036.303400
+            reg:  00000800.00000000.00000000.00000000.00000000
+            #address-cells:  00000003
+            #size-cells:  00000002
+            device_type: 'pci'
+            name: 'pci'
+            66mhz-capable:  
+            devsel-speed:  00000002
+            latency-timer:  00000040
+            cache-line-size:  00000010
+            class-code:  00060400
+            revision-id:  000000a1
+            device-id:  00005a46
+            vendor-id:  000015b3
+
+            Node 0xf00f8ef0
+                .node:  f00f8ef0
+                assigned-addresses:  83010010.00000000.00100000.00000000.00100000.c3010018.00000000.00800000.00000000.00800000.c3010020.00000000.08000000.00000000.08000000
+                reg:  00010000.00000000.00000000.00000000.00000000.03010010.00000000.00000000.00000000.00100000.43010018.00000000.00000000.00000000.00800000.43010020.00000000.00000000.00000000.08000000
+                compatible:  70636931.3562332c.35613434.2e313562.332e3561.34342e61.31007063.69313562.332c3561.34342e31.3562332e.35613434.00706369.31356233.2c356134.34007063.69313562.332c3561.34342e61.31007063.69313562.332c3561.34340070.6369636c.6173732c.30633036.30300070.6369636c.6173732c.30633036.00
+                name: 'pci15b3,5a44'
+                66mhz-capable:  
+                devsel-speed:  00000002
+                latency-timer:  00000040
+                max-latency:  00000000
+                min-grant:  00000000
+                interrupts:  00000001
+                cache-line-size:  00000010
+                class-code:  000c0600
+                subsystem-id:  00005a44
+                subsystem-vendor-id:  000015b3
+                revision-id:  000000a1
+                device-id:  00005a44
+                vendor-id:  000015b3
+
